@@ -1,0 +1,2180 @@
+[
+    {
+        "Continent": "Africa",
+        "Country_English": "Algeria",
+        "Country_Spanish": "Argelia",
+        "Flag_URL": "https://flagcdn.com/dz.svg",
+        "Sovereign_State": "Yes",
+        "Population": 43000000,
+        "Total Area Km2": 2381740.0
+    },
+    {
+        "Continent": "Africa",
+        "Country_English": "Angola",
+        "Country_Spanish": "Angola",
+        "Flag_URL": "https://flagcdn.com/ao.svg",
+        "Sovereign_State": "Yes",
+        "Population": 31127674,
+        "Total Area Km2": 1246700.0
+    },
+    {
+        "Continent": "Africa",
+        "Country_English": "Benin",
+        "Country_Spanish": "Benín",
+        "Flag_URL": "https://flagcdn.com/bj.svg",
+        "Sovereign_State": "Yes",
+        "Population": 11733059,
+        "Total Area Km2": 114763.0
+    },
+    {
+        "Continent": "Africa",
+        "Country_English": "Botswana",
+        "Country_Spanish": "Botsuana",
+        "Flag_URL": "https://flagcdn.com/bw.svg",
+        "Sovereign_State": "Yes",
+        "Population": 2338851,
+        "Total Area Km2": 581730.0
+    },
+    {
+        "Continent": "Africa",
+        "Country_English": "Burkina Faso",
+        "Country_Spanish": "Burkina Faso",
+        "Flag_URL": "https://flagcdn.com/bf.svg",
+        "Sovereign_State": "Yes",
+        "Population": 20870060,
+        "Total Area Km2": 274222.0
+    },
+    {
+        "Continent": "Africa",
+        "Country_English": "Burundi",
+        "Country_Spanish": "Burundi",
+        "Flag_URL": "https://flagcdn.com/bi.svg",
+        "Sovereign_State": "Yes",
+        "Population": 10953317,
+        "Total Area Km2": 27834.0
+    },
+    {
+        "Continent": "Africa",
+        "Country_English": "Cameroon",
+        "Country_Spanish": "Camerún",
+        "Flag_URL": "https://flagcdn.com/cm.svg",
+        "Sovereign_State": "Yes",
+        "Population": 25876000,
+        "Total Area Km2": 475442.0
+    },
+    {
+        "Continent": "Africa",
+        "Country_English": "Cape Verde",
+        "Country_Spanish": "Cabo Verde",
+        "Flag_URL": "https://flagcdn.com/cv.svg",
+        "Sovereign_State": "Yes",
+        "Population": 550483,
+        "Total Area Km2": 4033.0
+    },
+    {
+        "Continent": "Africa",
+        "Country_English": "Central African Republic",
+        "Country_Spanish": "República Centroafricana",
+        "Flag_URL": "https://flagcdn.com/cf.svg",
+        "Sovereign_State": "Yes",
+        "Population": 5496011,
+        "Total Area Km2": 622984.0
+    },
+    {
+        "Continent": "Africa",
+        "Country_English": "Chad",
+        "Country_Spanish": "Chad",
+        "Flag_URL": "https://flagcdn.com/td.svg",
+        "Sovereign_State": "Yes",
+        "Population": 15692969,
+        "Total Area Km2": 1284000.0
+    },
+    {
+        "Continent": "Africa",
+        "Country_English": "Comoros",
+        "Country_Spanish": "Comoras",
+        "Flag_URL": "https://flagcdn.com/km.svg",
+        "Sovereign_State": "Yes",
+        "Population": 873724,
+        "Total Area Km2": 1862.0
+    },
+    {
+        "Continent": "Africa",
+        "Country_English": "Democratic Republic of the Congo",
+        "Country_Spanish": "República Democrática del Congo",
+        "Flag_URL": "https://flagcdn.com/cd.svg",
+        "Sovereign_State": "Yes",
+        "Population": 86790567,
+        "Total Area Km2": 2344860.0
+    },
+    {
+        "Continent": "Africa",
+        "Country_English": "Djibouti",
+        "Country_Spanish": "Yibuti",
+        "Flag_URL": "https://flagcdn.com/dj.svg",
+        "Sovereign_State": "Yes",
+        "Population": 1078373,
+        "Total Area Km2": 23200.0
+    },
+    {
+        "Continent": "Africa",
+        "Country_English": "Egypt",
+        "Country_Spanish": "Egipto",
+        "Flag_URL": "https://flagcdn.com/eg.svg",
+        "Sovereign_State": "Yes",
+        "Population": 100052943,
+        "Total Area Km2": 1002450.0
+    },
+    {
+        "Continent": "Africa",
+        "Country_English": "Equatorial Guinea",
+        "Country_Spanish": "Guinea Ecuatorial",
+        "Flag_URL": "https://flagcdn.com/gq.svg",
+        "Sovereign_State": "Yes",
+        "Population": 1358276,
+        "Total Area Km2": 28051.0
+    },
+    {
+        "Continent": "Africa",
+        "Country_English": "Eritrea",
+        "Country_Spanish": "Eritrea",
+        "Flag_URL": "https://flagcdn.com/er.svg",
+        "Sovereign_State": "Yes",
+        "Population": 3497117,
+        "Total Area Km2": 117600.0
+    },
+    {
+        "Continent": "Africa",
+        "Country_English": "Eswatini",
+        "Country_Spanish": "Esuatini",
+        "Flag_URL": "https://flagcdn.com/sz.svg",
+        "Sovereign_State": "Yes",
+        "Population": 1093238,
+        "Total Area Km2": 17364.0
+    },
+    {
+        "Continent": "Africa",
+        "Country_English": "Ethiopia",
+        "Country_Spanish": "Etiopía",
+        "Flag_URL": "https://flagcdn.com/et.svg",
+        "Sovereign_State": "Yes",
+        "Population": 98665000,
+        "Total Area Km2": 1104300.0
+    },
+    {
+        "Continent": "Africa",
+        "Country_English": "Gabon",
+        "Country_Spanish": "Gabón",
+        "Flag_URL": "https://flagcdn.com/ga.svg",
+        "Sovereign_State": "Yes",
+        "Population": 2172579,
+        "Total Area Km2": 267668.0
+    },
+    {
+        "Continent": "Africa",
+        "Country_English": "Gambia",
+        "Country_Spanish": "Gambia",
+        "Flag_URL": "https://flagcdn.com/gm.svg",
+        "Sovereign_State": "Yes",
+        "Population": 2347706,
+        "Total Area Km2": 11295.0
+    },
+    {
+        "Continent": "Africa",
+        "Country_English": "Ghana",
+        "Country_Spanish": "Ghana",
+        "Flag_URL": "https://flagcdn.com/gh.svg",
+        "Sovereign_State": "Yes",
+        "Population": 30280811,
+        "Total Area Km2": 238533.0
+    },
+    {
+        "Continent": "Africa",
+        "Country_English": "Guinea",
+        "Country_Spanish": "Guinea",
+        "Flag_URL": "https://flagcdn.com/gn.svg",
+        "Sovereign_State": "Yes",
+        "Population": 12218357,
+        "Total Area Km2": 245857.0
+    },
+    {
+        "Continent": "Africa",
+        "Country_English": "Guinea-Bissau",
+        "Country_Spanish": "Guinea-Bisáu",
+        "Flag_URL": "https://flagcdn.com/gw.svg",
+        "Sovereign_State": "Yes",
+        "Population": 1604528,
+        "Total Area Km2": 36125.0
+    },
+    {
+        "Continent": "Africa",
+        "Country_English": "Ivory Coast",
+        "Country_Spanish": "Costa de Marfil",
+        "Flag_URL": "https://flagcdn.com/ci.svg",
+        "Sovereign_State": "Yes",
+        "Population": 25823071,
+        "Total Area Km2": 322463.0
+    },
+    {
+        "Continent": "Africa",
+        "Country_English": "Kenya",
+        "Country_Spanish": "Kenia",
+        "Flag_URL": "https://flagcdn.com/ke.svg",
+        "Sovereign_State": "Yes",
+        "Population": 47564296,
+        "Total Area Km2": 580367.0
+    },
+    {
+        "Continent": "Africa",
+        "Country_English": "Lesotho",
+        "Country_Spanish": "Lesoto",
+        "Flag_URL": "https://flagcdn.com/ls.svg",
+        "Sovereign_State": "Yes",
+        "Population": 2007201,
+        "Total Area Km2": 30355.0
+    },
+    {
+        "Continent": "Africa",
+        "Country_English": "Liberia",
+        "Country_Spanish": "Liberia",
+        "Flag_URL": "https://flagcdn.com/lr.svg",
+        "Sovereign_State": "Yes",
+        "Population": 4475353,
+        "Total Area Km2": 111369.0
+    },
+    {
+        "Continent": "Africa",
+        "Country_English": "Libya",
+        "Country_Spanish": "Libia",
+        "Flag_URL": "https://flagcdn.com/ly.svg",
+        "Sovereign_State": "Yes",
+        "Population": 6777452,
+        "Total Area Km2": 1759540.0
+    },
+    {
+        "Continent": "Africa",
+        "Country_English": "Madagascar",
+        "Country_Spanish": "Madagascar",
+        "Flag_URL": "https://flagcdn.com/mg.svg",
+        "Sovereign_State": "Yes",
+        "Population": 25680342,
+        "Total Area Km2": 587041.0
+    },
+    {
+        "Continent": "Africa",
+        "Country_English": "Malawi",
+        "Country_Spanish": "Malaui",
+        "Flag_URL": "https://flagcdn.com/mw.svg",
+        "Sovereign_State": "Yes",
+        "Population": 17563749,
+        "Total Area Km2": 118484.0
+    },
+    {
+        "Continent": "Africa",
+        "Country_English": "Mali",
+        "Country_Spanish": "Malí",
+        "Flag_URL": "https://flagcdn.com/ml.svg",
+        "Sovereign_State": "Yes",
+        "Population": 19973000,
+        "Total Area Km2": 1240190.0
+    },
+    {
+        "Continent": "Africa",
+        "Country_English": "Mauritania",
+        "Country_Spanish": "Mauritania",
+        "Flag_URL": "https://flagcdn.com/mr.svg",
+        "Sovereign_State": "Yes",
+        "Population": 4077347,
+        "Total Area Km2": 1030700.0
+    },
+    {
+        "Continent": "Africa",
+        "Country_English": "Mauritius",
+        "Country_Spanish": "Mauricio",
+        "Flag_URL": "https://flagcdn.com/mu.svg",
+        "Sovereign_State": "Yes",
+        "Population": 1265985,
+        "Total Area Km2": 2040.0
+    },
+    {
+        "Continent": "Africa",
+        "Country_English": "Morocco",
+        "Country_Spanish": "Marruecos",
+        "Flag_URL": "https://flagcdn.com/ma.svg",
+        "Sovereign_State": "Yes",
+        "Population": 35821024,
+        "Total Area Km2": 446550.0
+    },
+    {
+        "Continent": "Africa",
+        "Country_English": "Mozambique",
+        "Country_Spanish": "Mozambique",
+        "Flag_URL": "https://flagcdn.com/mz.svg",
+        "Sovereign_State": "Yes",
+        "Population": 28571310,
+        "Total Area Km2": 801590.0
+    },
+    {
+        "Continent": "Africa",
+        "Country_English": "Namibia",
+        "Country_Spanish": "Namibia",
+        "Flag_URL": "https://flagcdn.com/na.svg",
+        "Sovereign_State": "Yes",
+        "Population": 2458936,
+        "Total Area Km2": 825615.0
+    },
+    {
+        "Continent": "Africa",
+        "Country_English": "Niger",
+        "Country_Spanish": "Níger",
+        "Flag_URL": "https://flagcdn.com/ne.svg",
+        "Sovereign_State": "Yes",
+        "Population": 22314743,
+        "Total Area Km2": 1267000.0
+    },
+    {
+        "Continent": "Africa",
+        "Country_English": "Nigeria",
+        "Country_Spanish": "Nigeria",
+        "Flag_URL": "https://flagcdn.com/ng.svg",
+        "Sovereign_State": "Yes",
+        "Population": 200963599,
+        "Total Area Km2": 923768.0
+    },
+    {
+        "Continent": "Africa",
+        "Country_English": "Republic of the Congo",
+        "Country_Spanish": "República del Congo",
+        "Flag_URL": "https://flagcdn.com/cg.svg",
+        "Sovereign_State": "Yes",
+        "Population": 5380508,
+        "Total Area Km2": 342000.0
+    },
+    {
+        "Continent": "Africa",
+        "Country_English": "Rwanda",
+        "Country_Spanish": "Ruanda",
+        "Flag_URL": "https://flagcdn.com/rw.svg",
+        "Sovereign_State": "Yes",
+        "Population": 12374397,
+        "Total Area Km2": 26338.0
+    },
+    {
+        "Continent": "Africa",
+        "Country_English": "Réunion",
+        "Country_Spanish": "Reunión",
+        "Flag_URL": "https://flagcdn.com/re.svg",
+        "Sovereign_State": "No",
+        "Population": 859959,
+        "Total Area Km2": 2511.0
+    },
+    {
+        "Continent": "Africa",
+        "Country_English": "Sao Tome and Principe",
+        "Country_Spanish": "Santo Tomé y Príncipe",
+        "Flag_URL": "https://flagcdn.com/st.svg",
+        "Sovereign_State": "Yes",
+        "Population": 201784,
+        "Total Area Km2": 964.0
+    },
+    {
+        "Continent": "Africa",
+        "Country_English": "Senegal",
+        "Country_Spanish": "Senegal",
+        "Flag_URL": "https://flagcdn.com/sn.svg",
+        "Sovereign_State": "Yes",
+        "Population": 16209125,
+        "Total Area Km2": 196722.0
+    },
+    {
+        "Continent": "Africa",
+        "Country_English": "Seychelles",
+        "Country_Spanish": "Seychelles",
+        "Flag_URL": "https://flagcdn.com/sc.svg",
+        "Sovereign_State": "Yes",
+        "Population": 97625,
+        "Total Area Km2": 452.0
+    },
+    {
+        "Continent": "Africa",
+        "Country_English": "Sierra Leone",
+        "Country_Spanish": "Sierra Leona",
+        "Flag_URL": "https://flagcdn.com/sl.svg",
+        "Sovereign_State": "Yes",
+        "Population": 7901454,
+        "Total Area Km2": 71740.0
+    },
+    {
+        "Continent": "Africa",
+        "Country_English": "Somalia",
+        "Country_Spanish": "Somalia",
+        "Flag_URL": "https://flagcdn.com/so.svg",
+        "Sovereign_State": "Yes",
+        "Population": 15442905,
+        "Total Area Km2": 637657.0
+    },
+    {
+        "Continent": "Africa",
+        "Country_English": "South Africa",
+        "Country_Spanish": "Sudáfrica",
+        "Flag_URL": "https://flagcdn.com/za.svg",
+        "Sovereign_State": "Yes",
+        "Population": 58775022,
+        "Total Area Km2": 1221040.0
+    },
+    {
+        "Continent": "Africa",
+        "Country_English": "South Georgia",
+        "Country_Spanish": "Georgia del Sur",
+        "Flag_URL": "https://flagcdn.com/gs.svg",
+        "Sovereign_State": "No",
+        "Population": 0,
+        "Total Area Km2": 3903.0
+    },
+    {
+        "Continent": "Africa",
+        "Country_English": "South Sudan",
+        "Country_Spanish": "Sudán del Sur",
+        "Flag_URL": "https://flagcdn.com/ss.svg",
+        "Sovereign_State": "Yes",
+        "Population": 12778250,
+        "Total Area Km2": 644329.0
+    },
+    {
+        "Continent": "Africa",
+        "Country_English": "Sudan",
+        "Country_Spanish": "Sudán",
+        "Flag_URL": "https://flagcdn.com/sd.svg",
+        "Sovereign_State": "Yes",
+        "Population": 42295645,
+        "Total Area Km2": 1861480.0
+    },
+    {
+        "Continent": "Africa",
+        "Country_English": "Tanzania",
+        "Country_Spanish": "Tanzania",
+        "Flag_URL": "https://flagcdn.com/tz.svg",
+        "Sovereign_State": "Yes",
+        "Population": 55890747,
+        "Total Area Km2": 945087.0
+    },
+    {
+        "Continent": "Africa",
+        "Country_English": "Togo",
+        "Country_Spanish": "Togo",
+        "Flag_URL": "https://flagcdn.com/tg.svg",
+        "Sovereign_State": "Yes",
+        "Population": 7538000,
+        "Total Area Km2": 56785.0
+    },
+    {
+        "Continent": "Africa",
+        "Country_English": "Tunisia",
+        "Country_Spanish": "Túnez",
+        "Flag_URL": "https://flagcdn.com/tn.svg",
+        "Sovereign_State": "Yes",
+        "Population": 11722038,
+        "Total Area Km2": 163610.0
+    },
+    {
+        "Continent": "Africa",
+        "Country_English": "Uganda",
+        "Country_Spanish": "Uganda",
+        "Flag_URL": "https://flagcdn.com/ug.svg",
+        "Sovereign_State": "Yes",
+        "Population": 40299300,
+        "Total Area Km2": 241550.0
+    },
+    {
+        "Continent": "Africa",
+        "Country_English": "Western Sahara",
+        "Country_Spanish": "Sahara Occidental",
+        "Flag_URL": "https://flagcdn.com/eh.svg",
+        "Sovereign_State": "No",
+        "Population": 652271,
+        "Total Area Km2": 266000.0
+    },
+    {
+        "Continent": "Africa",
+        "Country_English": "Zambia",
+        "Country_Spanish": "Zambia",
+        "Flag_URL": "https://flagcdn.com/zm.svg",
+        "Sovereign_State": "Yes",
+        "Population": 17381168,
+        "Total Area Km2": 752612.0
+    },
+    {
+        "Continent": "Africa",
+        "Country_English": "Zimbabwe",
+        "Country_Spanish": "Zimbabue",
+        "Flag_URL": "https://flagcdn.com/zw.svg",
+        "Sovereign_State": "Yes",
+        "Population": 15159624,
+        "Total Area Km2": 390757.0
+    },
+    {
+        "Continent": "America",
+        "Country_English": "Anguilla",
+        "Country_Spanish": "Anguila",
+        "Flag_URL": "https://flagcdn.com/ai.svg",
+        "Sovereign_State": "No",
+        "Population": 14869,
+        "Total Area Km2": 91.0
+    },
+    {
+        "Continent": "America",
+        "Country_English": "Antigua and Barbuda",
+        "Country_Spanish": "Antigua y Barbuda",
+        "Flag_URL": "https://flagcdn.com/ag.svg",
+        "Sovereign_State": "Yes",
+        "Population": 96453,
+        "Total Area Km2": 442.0
+    },
+    {
+        "Continent": "America",
+        "Country_English": "Argentina",
+        "Country_Spanish": "Argentina",
+        "Flag_URL": "https://flagcdn.com/ar.svg",
+        "Sovereign_State": "Yes",
+        "Population": 44938712,
+        "Total Area Km2": 2780400.0
+    },
+    {
+        "Continent": "America",
+        "Country_English": "Aruba",
+        "Country_Spanish": "Aruba",
+        "Flag_URL": "https://flagcdn.com/aw.svg",
+        "Sovereign_State": "No",
+        "Population": 112309,
+        "Total Area Km2": 180.0
+    },
+    {
+        "Continent": "America",
+        "Country_English": "Bahamas",
+        "Country_Spanish": "Bahamas",
+        "Flag_URL": "https://flagcdn.com/bs.svg",
+        "Sovereign_State": "Yes",
+        "Population": 385340,
+        "Total Area Km2": 13943.0
+    },
+    {
+        "Continent": "America",
+        "Country_English": "Barbados",
+        "Country_Spanish": "Barbados",
+        "Flag_URL": "https://flagcdn.com/bb.svg",
+        "Sovereign_State": "Yes",
+        "Population": 287025,
+        "Total Area Km2": 430.0
+    },
+    {
+        "Continent": "America",
+        "Country_English": "Belize",
+        "Country_Spanish": "Belice",
+        "Flag_URL": "https://flagcdn.com/bz.svg",
+        "Sovereign_State": "Yes",
+        "Population": 408487,
+        "Total Area Km2": 22966.0
+    },
+    {
+        "Continent": "America",
+        "Country_English": "Bermuda",
+        "Country_Spanish": "Bermudas",
+        "Flag_URL": "https://flagcdn.com/bm.svg",
+        "Sovereign_State": "No",
+        "Population": 64027,
+        "Total Area Km2": 54.0
+    },
+    {
+        "Continent": "America",
+        "Country_English": "Bolivia",
+        "Country_Spanish": "Bolivia",
+        "Flag_URL": "https://flagcdn.com/bo.svg",
+        "Sovereign_State": "Yes",
+        "Population": 11469896,
+        "Total Area Km2": 1098580.0
+    },
+    {
+        "Continent": "America",
+        "Country_English": "Brazil",
+        "Country_Spanish": "Brasil",
+        "Flag_URL": "https://flagcdn.com/br.svg",
+        "Sovereign_State": "Yes",
+        "Population": 211173432,
+        "Total Area Km2": 8515770.0
+    },
+    {
+        "Continent": "America",
+        "Country_English": "Canada",
+        "Country_Spanish": "Canadá",
+        "Flag_URL": "https://flagcdn.com/ca.svg",
+        "Sovereign_State": "Yes",
+        "Population": 37935814,
+        "Total Area Km2": 9984670.0
+    },
+    {
+        "Continent": "America",
+        "Country_English": "Caribbean Netherlands",
+        "Country_Spanish": "Caribe Neerlandés",
+        "Flag_URL": "https://flagcdn.com/bq.svg",
+        "Sovereign_State": "No",
+        "Population": 25157,
+        "Total Area Km2": 328.0
+    },
+    {
+        "Continent": "America",
+        "Country_English": "Cayman Islands",
+        "Country_Spanish": "Islas Caimán",
+        "Flag_URL": "https://flagcdn.com/ky.svg",
+        "Sovereign_State": "No",
+        "Population": 65813,
+        "Total Area Km2": 264.0
+    },
+    {
+        "Continent": "America",
+        "Country_English": "Chile",
+        "Country_Spanish": "Chile",
+        "Flag_URL": "https://flagcdn.com/cl.svg",
+        "Sovereign_State": "Yes",
+        "Population": 19107216,
+        "Total Area Km2": 756102.0
+    },
+    {
+        "Continent": "America",
+        "Country_English": "Colombia",
+        "Country_Spanish": "Colombia",
+        "Flag_URL": "https://flagcdn.com/co.svg",
+        "Sovereign_State": "Yes",
+        "Population": 49395678,
+        "Total Area Km2": 1141750.0
+    },
+    {
+        "Continent": "America",
+        "Country_English": "Costa Rica",
+        "Country_Spanish": "Costa Rica",
+        "Flag_URL": "https://flagcdn.com/cr.svg",
+        "Sovereign_State": "Yes",
+        "Population": 5058007,
+        "Total Area Km2": 51100.0
+    },
+    {
+        "Continent": "America",
+        "Country_English": "Cuba",
+        "Country_Spanish": "Cuba",
+        "Flag_URL": "https://flagcdn.com/cu.svg",
+        "Sovereign_State": "Yes",
+        "Population": 11209628,
+        "Total Area Km2": 109884.0
+    },
+    {
+        "Continent": "America",
+        "Country_English": "Curaçao",
+        "Country_Spanish": "Curazao",
+        "Flag_URL": "https://flagcdn.com/cw.svg",
+        "Sovereign_State": "No",
+        "Population": 158665,
+        "Total Area Km2": 444.0
+    },
+    {
+        "Continent": "America",
+        "Country_English": "Dominica",
+        "Country_Spanish": "Dominica",
+        "Flag_URL": "https://flagcdn.com/dm.svg",
+        "Sovereign_State": "Yes",
+        "Population": 71808,
+        "Total Area Km2": 751.0
+    },
+    {
+        "Continent": "America",
+        "Country_English": "Dominican Republic",
+        "Country_Spanish": "República Dominicana",
+        "Flag_URL": "https://flagcdn.com/do.svg",
+        "Sovereign_State": "Yes",
+        "Population": 10358320,
+        "Total Area Km2": 48671.0
+    },
+    {
+        "Continent": "America",
+        "Country_English": "Ecuador",
+        "Country_Spanish": "Ecuador",
+        "Flag_URL": "https://flagcdn.com/ec.svg",
+        "Sovereign_State": "Yes",
+        "Population": 17431712,
+        "Total Area Km2": 276841.0
+    },
+    {
+        "Continent": "America",
+        "Country_English": "El Salvador",
+        "Country_Spanish": "El Salvador",
+        "Flag_URL": "https://flagcdn.com/sv.svg",
+        "Sovereign_State": "Yes",
+        "Population": 6704864,
+        "Total Area Km2": 21041.0
+    },
+    {
+        "Continent": "America",
+        "Country_English": "Falkland Islands",
+        "Country_Spanish": "Islas Malvinas",
+        "Flag_URL": "https://flagcdn.com/fk.svg",
+        "Sovereign_State": "No",
+        "Population": 3198,
+        "Total Area Km2": 12173.0
+    },
+    {
+        "Continent": "America",
+        "Country_English": "French Guiana",
+        "Country_Spanish": "Guayana Francesa",
+        "Flag_URL": "https://flagcdn.com/gf.svg",
+        "Sovereign_State": "No",
+        "Population": 290691,
+        "Total Area Km2": 83534.0
+    },
+    {
+        "Continent": "America",
+        "Country_English": "Greenland",
+        "Country_Spanish": "Groenlandia",
+        "Flag_URL": "https://flagcdn.com/gl.svg",
+        "Sovereign_State": "No",
+        "Population": 56081,
+        "Total Area Km2": 2166090.0
+    },
+    {
+        "Continent": "America",
+        "Country_English": "Grenada",
+        "Country_Spanish": "Granada",
+        "Flag_URL": "https://flagcdn.com/gd.svg",
+        "Sovereign_State": "Yes",
+        "Population": 112003,
+        "Total Area Km2": 344.0
+    },
+    {
+        "Continent": "America",
+        "Country_English": "Guadeloupe",
+        "Country_Spanish": "Guadalupe",
+        "Flag_URL": "https://flagcdn.com/gp.svg",
+        "Sovereign_State": "No",
+        "Population": 395700,
+        "Total Area Km2": 1628.0
+    },
+    {
+        "Continent": "America",
+        "Country_English": "Guatemala",
+        "Country_Spanish": "Guatemala",
+        "Flag_URL": "https://flagcdn.com/gt.svg",
+        "Sovereign_State": "Yes",
+        "Population": 16604026,
+        "Total Area Km2": 108889.0
+    },
+    {
+        "Continent": "America",
+        "Country_English": "Guyana",
+        "Country_Spanish": "Guyana",
+        "Flag_URL": "https://flagcdn.com/gy.svg",
+        "Sovereign_State": "Yes",
+        "Population": 782766,
+        "Total Area Km2": 214969.0
+    },
+    {
+        "Continent": "America",
+        "Country_English": "Haiti",
+        "Country_Spanish": "Haití",
+        "Flag_URL": "https://flagcdn.com/ht.svg",
+        "Sovereign_State": "Yes",
+        "Population": 11577779,
+        "Total Area Km2": 27750.0
+    },
+    {
+        "Continent": "America",
+        "Country_English": "Honduras",
+        "Country_Spanish": "Honduras",
+        "Flag_URL": "https://flagcdn.com/hn.svg",
+        "Sovereign_State": "Yes",
+        "Population": 9158345,
+        "Total Area Km2": 112492.0
+    },
+    {
+        "Continent": "America",
+        "Country_English": "Jamaica",
+        "Country_Spanish": "Jamaica",
+        "Flag_URL": "https://flagcdn.com/jm.svg",
+        "Sovereign_State": "Yes",
+        "Population": 2726667,
+        "Total Area Km2": 10991.0
+    },
+    {
+        "Continent": "America",
+        "Country_English": "Martinique",
+        "Country_Spanish": "Martinica",
+        "Flag_URL": "https://flagcdn.com/mq.svg",
+        "Sovereign_State": "No",
+        "Population": 376480,
+        "Total Area Km2": 1128.0
+    },
+    {
+        "Continent": "America",
+        "Country_English": "Mexico",
+        "Country_Spanish": "México",
+        "Flag_URL": "https://flagcdn.com/mx.svg",
+        "Sovereign_State": "Yes",
+        "Population": 126577691,
+        "Total Area Km2": 1964380.0
+    },
+    {
+        "Continent": "America",
+        "Country_English": "Montserrat",
+        "Country_Spanish": "Montserrat",
+        "Flag_URL": "https://flagcdn.com/ms.svg",
+        "Sovereign_State": "No",
+        "Population": 4989,
+        "Total Area Km2": 102.0
+    },
+    {
+        "Continent": "America",
+        "Country_English": "Nicaragua",
+        "Country_Spanish": "Nicaragua",
+        "Flag_URL": "https://flagcdn.com/ni.svg",
+        "Sovereign_State": "Yes",
+        "Population": 6460411,
+        "Total Area Km2": 130373.0
+    },
+    {
+        "Continent": "America",
+        "Country_English": "Panama",
+        "Country_Spanish": "Panamá",
+        "Flag_URL": "https://flagcdn.com/pa.svg",
+        "Sovereign_State": "Yes",
+        "Population": 4218808,
+        "Total Area Km2": 75417.0
+    },
+    {
+        "Continent": "America",
+        "Country_English": "Paraguay",
+        "Country_Spanish": "Paraguay",
+        "Flag_URL": "https://flagcdn.com/py.svg",
+        "Sovereign_State": "Yes",
+        "Population": 7152703,
+        "Total Area Km2": 406752.0
+    },
+    {
+        "Continent": "America",
+        "Country_English": "Peru",
+        "Country_Spanish": "Perú",
+        "Flag_URL": "https://flagcdn.com/pe.svg",
+        "Sovereign_State": "Yes",
+        "Population": 32131400,
+        "Total Area Km2": 1285220.0
+    },
+    {
+        "Continent": "America",
+        "Country_English": "Puerto Rico",
+        "Country_Spanish": "Puerto Rico",
+        "Flag_URL": "https://flagcdn.com/pr.svg",
+        "Sovereign_State": "No",
+        "Population": 3193694,
+        "Total Area Km2": 8870.0
+    },
+    {
+        "Continent": "America",
+        "Country_English": "Saint Barthélemy",
+        "Country_Spanish": "San Bartolomé",
+        "Flag_URL": "https://flagcdn.com/bl.svg",
+        "Sovereign_State": "No",
+        "Population": 9793,
+        "Total Area Km2": 21.0
+    },
+    {
+        "Continent": "America",
+        "Country_English": "Saint Kitts and Nevis",
+        "Country_Spanish": "San Cristóbal y Nieves",
+        "Flag_URL": "https://flagcdn.com/kn.svg",
+        "Sovereign_State": "Yes",
+        "Population": 52823,
+        "Total Area Km2": 261.0
+    },
+    {
+        "Continent": "America",
+        "Country_English": "Saint Lucia",
+        "Country_Spanish": "Santa Lucía",
+        "Flag_URL": "https://flagcdn.com/lc.svg",
+        "Sovereign_State": "Yes",
+        "Population": 178696,
+        "Total Area Km2": 616.0
+    },
+    {
+        "Continent": "America",
+        "Country_English": "Saint Pierre and Miquelon",
+        "Country_Spanish": "San Pedro y Miquelón",
+        "Flag_URL": "https://flagcdn.com/pm.svg",
+        "Sovereign_State": "No",
+        "Population": 6008,
+        "Total Area Km2": 242.0
+    },
+    {
+        "Continent": "America",
+        "Country_English": "Saint Vincent and the Grenadines",
+        "Country_Spanish": "San Vicente y las Granadinas",
+        "Flag_URL": "https://flagcdn.com/vc.svg",
+        "Sovereign_State": "Yes",
+        "Population": 110608,
+        "Total Area Km2": 389.0
+    },
+    {
+        "Continent": "America",
+        "Country_English": "Sint Maarten",
+        "Country_Spanish": "Sint Maarten",
+        "Flag_URL": "https://flagcdn.com/sx.svg",
+        "Sovereign_State": "No",
+        "Population": 40614,
+        "Total Area Km2": 34.0
+    },
+    {
+        "Continent": "America",
+        "Country_English": "Suriname",
+        "Country_Spanish": "Surinam",
+        "Flag_URL": "https://flagcdn.com/sr.svg",
+        "Sovereign_State": "Yes",
+        "Population": 581372,
+        "Total Area Km2": 163820.0
+    },
+    {
+        "Continent": "America",
+        "Country_English": "Trinidad and Tobago",
+        "Country_Spanish": "Trinidad y Tobago",
+        "Flag_URL": "https://flagcdn.com/tt.svg",
+        "Sovereign_State": "Yes",
+        "Population": 1363985,
+        "Total Area Km2": 5130.0
+    },
+    {
+        "Continent": "America",
+        "Country_English": "United States",
+        "Country_Spanish": "Estados Unidos",
+        "Flag_URL": "https://flagcdn.com/us.svg",
+        "Sovereign_State": "Yes",
+        "Population": 329345637,
+        "Total Area Km2": 9833520.0
+    },
+    {
+        "Continent": "America",
+        "Country_English": "Uruguay",
+        "Country_Spanish": "Uruguay",
+        "Flag_URL": "https://flagcdn.com/uy.svg",
+        "Sovereign_State": "Yes",
+        "Population": 3518552,
+        "Total Area Km2": 176215.0
+    },
+    {
+        "Continent": "America",
+        "Country_English": "Venezuela",
+        "Country_Spanish": "Venezuela",
+        "Flag_URL": "https://flagcdn.com/ve.svg",
+        "Sovereign_State": "Yes",
+        "Population": 32219521,
+        "Total Area Km2": 916445.0
+    },
+    {
+        "Continent": "America",
+        "Country_English": "Antarctica",
+        "Country_Spanish": "Antártida",
+        "Flag_URL": "https://flagcdn.com/aq.svg",
+        "Sovereign_State": "No",
+        "Population": 3000,
+        "Total Area Km2": 14000000.0
+    },
+    {
+        "Continent": "Asia",
+        "Country_English": "Afghanistan",
+        "Country_Spanish": "Afganistán",
+        "Flag_URL": "https://flagcdn.com/af.svg",
+        "Sovereign_State": "Yes",
+        "Population": 32225560,
+        "Total Area Km2": 652230.0
+    },
+    {
+        "Continent": "Asia",
+        "Country_English": "Armenia",
+        "Country_Spanish": "Armenia",
+        "Flag_URL": "https://flagcdn.com/am.svg",
+        "Sovereign_State": "Yes",
+        "Population": 2957500,
+        "Total Area Km2": 29743.0
+    },
+    {
+        "Continent": "Asia",
+        "Country_English": "Azerbaijan",
+        "Country_Spanish": "Azerbaiyán",
+        "Flag_URL": "https://flagcdn.com/az.svg",
+        "Sovereign_State": "Yes",
+        "Population": 10067108,
+        "Total Area Km2": 86600.0
+    },
+    {
+        "Continent": "Asia",
+        "Country_English": "Bahrain",
+        "Country_Spanish": "Baréin",
+        "Flag_URL": "https://flagcdn.com/bh.svg",
+        "Sovereign_State": "Yes",
+        "Population": 1543300,
+        "Total Area Km2": 778.0
+    },
+    {
+        "Continent": "Asia",
+        "Country_English": "Bangladesh",
+        "Country_Spanish": "Bangladés",
+        "Flag_URL": "https://flagcdn.com/bd.svg",
+        "Sovereign_State": "Yes",
+        "Population": 168163758,
+        "Total Area Km2": 147570.0
+    },
+    {
+        "Continent": "Asia",
+        "Country_English": "Bhutan",
+        "Country_Spanish": "Bután",
+        "Flag_URL": "https://flagcdn.com/bt.svg",
+        "Sovereign_State": "Yes",
+        "Population": 741672,
+        "Total Area Km2": 38394.0
+    },
+    {
+        "Continent": "Asia",
+        "Country_English": "British Indian Ocean Territory",
+        "Country_Spanish": "Territorio Británico del Océano Índico",
+        "Flag_URL": "https://flagcdn.com/io.svg",
+        "Sovereign_State": "No",
+        "Population": 0,
+        "Total Area Km2": 60.0
+    },
+    {
+        "Continent": "Asia",
+        "Country_English": "Brunei",
+        "Country_Spanish": "Brunéi",
+        "Flag_URL": "https://flagcdn.com/bn.svg",
+        "Sovereign_State": "Yes",
+        "Population": 442400,
+        "Total Area Km2": 5765.0
+    },
+    {
+        "Continent": "Asia",
+        "Country_English": "Cambodia",
+        "Country_Spanish": "Camboya",
+        "Flag_URL": "https://flagcdn.com/kh.svg",
+        "Sovereign_State": "Yes",
+        "Population": 15288489,
+        "Total Area Km2": 181035.0
+    },
+    {
+        "Continent": "Asia",
+        "Country_English": "China",
+        "Country_Spanish": "China",
+        "Flag_URL": "https://flagcdn.com/cn.svg",
+        "Sovereign_State": "Yes",
+        "Population": 1401492920,
+        "Total Area Km2": 9596960.0
+    },
+    {
+        "Continent": "Asia",
+        "Country_English": "Christmas Island",
+        "Country_Spanish": "Isla de Navidad",
+        "Flag_URL": "https://flagcdn.com/cx.svg",
+        "Sovereign_State": "No",
+        "Population": 1928,
+        "Total Area Km2": 135.0
+    },
+    {
+        "Continent": "Asia",
+        "Country_English": "Cocos Islands",
+        "Country_Spanish": "Islas Cocos",
+        "Flag_URL": "https://flagcdn.com/cc.svg",
+        "Sovereign_State": "No",
+        "Population": 538,
+        "Total Area Km2": 14.0
+    },
+    {
+        "Continent": "Asia",
+        "Country_English": "Timor-Leste",
+        "Country_Spanish": "Timor Oriental",
+        "Flag_URL": "https://flagcdn.com/tl.svg",
+        "Sovereign_State": "Yes",
+        "Population": 1387149,
+        "Total Area Km2": 14919.0
+    },
+    {
+        "Continent": "Asia",
+        "Country_English": "Georgia",
+        "Country_Spanish": "Georgia",
+        "Flag_URL": "https://flagcdn.com/ge.svg",
+        "Sovereign_State": "Yes",
+        "Population": 3723464,
+        "Total Area Km2": 69700.0
+    },
+    {
+        "Continent": "Asia",
+        "Country_English": "Hong Kong",
+        "Country_Spanish": "Hong Kong",
+        "Flag_URL": "https://flagcdn.com/hk.svg",
+        "Sovereign_State": "No",
+        "Population": 7500700,
+        "Total Area Km2": 1104.0
+    },
+    {
+        "Continent": "Asia",
+        "Country_English": "India",
+        "Country_Spanish": "India",
+        "Flag_URL": "https://flagcdn.com/in.svg",
+        "Sovereign_State": "Yes",
+        "Population": 1359072550,
+        "Total Area Km2": 3287260.0
+    },
+    {
+        "Continent": "Asia",
+        "Country_English": "Indonesia",
+        "Country_Spanish": "Indonesia",
+        "Flag_URL": "https://flagcdn.com/id.svg",
+        "Sovereign_State": "Yes",
+        "Population": 266911900,
+        "Total Area Km2": 1910930.0
+    },
+    {
+        "Continent": "Asia",
+        "Country_English": "Iran",
+        "Country_Spanish": "Irán",
+        "Flag_URL": "https://flagcdn.com/ir.svg",
+        "Sovereign_State": "Yes",
+        "Population": 83230120,
+        "Total Area Km2": 1648200.0
+    },
+    {
+        "Continent": "Asia",
+        "Country_English": "Iraq",
+        "Country_Spanish": "Irak",
+        "Flag_URL": "https://flagcdn.com/iq.svg",
+        "Sovereign_State": "Yes",
+        "Population": 39127900,
+        "Total Area Km2": 438317.0
+    },
+    {
+        "Continent": "Asia",
+        "Country_English": "Israel",
+        "Country_Spanish": "Israel",
+        "Flag_URL": "https://flagcdn.com/il.svg",
+        "Sovereign_State": "Yes",
+        "Population": 9164160,
+        "Total Area Km2": 20770.0
+    },
+    {
+        "Continent": "Asia",
+        "Country_English": "Japan",
+        "Country_Spanish": "Japón",
+        "Flag_URL": "https://flagcdn.com/jp.svg",
+        "Sovereign_State": "Yes",
+        "Population": 126010000,
+        "Total Area Km2": 377975.0
+    },
+    {
+        "Continent": "Asia",
+        "Country_English": "Jordan",
+        "Country_Spanish": "Jordania",
+        "Flag_URL": "https://flagcdn.com/jo.svg",
+        "Sovereign_State": "Yes",
+        "Population": 10622608,
+        "Total Area Km2": 89342.0
+    },
+    {
+        "Continent": "Asia",
+        "Country_English": "Kazakhstan",
+        "Country_Spanish": "Kazajistán",
+        "Flag_URL": "https://flagcdn.com/kz.svg",
+        "Sovereign_State": "Yes",
+        "Population": 18651680,
+        "Total Area Km2": 2724900.0
+    },
+    {
+        "Continent": "Asia",
+        "Country_English": "Kuwait",
+        "Country_Spanish": "Kuwait",
+        "Flag_URL": "https://flagcdn.com/kw.svg",
+        "Sovereign_State": "Yes",
+        "Population": 4420110,
+        "Total Area Km2": 17818.0
+    },
+    {
+        "Continent": "Asia",
+        "Country_English": "Kyrgyzstan",
+        "Country_Spanish": "Kirguistán",
+        "Flag_URL": "https://flagcdn.com/kg.svg",
+        "Sovereign_State": "Yes",
+        "Population": 6490300,
+        "Total Area Km2": 199951.0
+    },
+    {
+        "Continent": "Asia",
+        "Country_English": "Laos",
+        "Country_Spanish": "Laos",
+        "Flag_URL": "https://flagcdn.com/la.svg",
+        "Sovereign_State": "Yes",
+        "Population": 7123205,
+        "Total Area Km2": 236800.0
+    },
+    {
+        "Continent": "Asia",
+        "Country_English": "Lebanon",
+        "Country_Spanish": "Líbano",
+        "Flag_URL": "https://flagcdn.com/lb.svg",
+        "Sovereign_State": "Yes",
+        "Population": 6855713,
+        "Total Area Km2": 10452.0
+    },
+    {
+        "Continent": "Asia",
+        "Country_English": "Macau",
+        "Country_Spanish": "Macao",
+        "Flag_URL": "https://flagcdn.com/mo.svg",
+        "Sovereign_State": "No",
+        "Population": 676100,
+        "Total Area Km2": 30.0
+    },
+    {
+        "Continent": "Asia",
+        "Country_English": "Malaysia",
+        "Country_Spanish": "Malasia",
+        "Flag_URL": "https://flagcdn.com/my.svg",
+        "Sovereign_State": "Yes",
+        "Population": 32700760,
+        "Total Area Km2": 330803.0
+    },
+    {
+        "Continent": "Asia",
+        "Country_English": "Maldives",
+        "Country_Spanish": "Maldivas",
+        "Flag_URL": "https://flagcdn.com/mv.svg",
+        "Sovereign_State": "Yes",
+        "Population": 374775,
+        "Total Area Km2": 300.0
+    },
+    {
+        "Continent": "Asia",
+        "Country_English": "Mongolia",
+        "Country_Spanish": "Mongolia",
+        "Flag_URL": "https://flagcdn.com/mn.svg",
+        "Sovereign_State": "Yes",
+        "Population": 3304526,
+        "Total Area Km2": 1564110.0
+    },
+    {
+        "Continent": "Asia",
+        "Country_English": "Myanmar",
+        "Country_Spanish": "Birmania",
+        "Flag_URL": "https://flagcdn.com/mm.svg",
+        "Sovereign_State": "Yes",
+        "Population": 54339766,
+        "Total Area Km2": 676578.0
+    },
+    {
+        "Continent": "Asia",
+        "Country_English": "Nepal",
+        "Country_Spanish": "Nepal",
+        "Flag_URL": "https://flagcdn.com/np.svg",
+        "Sovereign_State": "Yes",
+        "Population": 29609623,
+        "Total Area Km2": 147181.0
+    },
+    {
+        "Continent": "Asia",
+        "Country_English": "North Korea",
+        "Country_Spanish": "Corea del Norte",
+        "Flag_URL": "https://flagcdn.com/kp.svg",
+        "Sovereign_State": "Yes",
+        "Population": 25450000,
+        "Total Area Km2": 120540.0
+    },
+    {
+        "Continent": "Asia",
+        "Country_English": "Oman",
+        "Country_Spanish": "Omán",
+        "Flag_URL": "https://flagcdn.com/om.svg",
+        "Sovereign_State": "Yes",
+        "Population": 4664790,
+        "Total Area Km2": 309500.0
+    },
+    {
+        "Continent": "Asia",
+        "Country_English": "Pakistan",
+        "Country_Spanish": "Pakistán",
+        "Flag_URL": "https://flagcdn.com/pk.svg",
+        "Sovereign_State": "Yes",
+        "Population": 218741520,
+        "Total Area Km2": 907132.0
+    },
+    {
+        "Continent": "Asia",
+        "Country_English": "Palestine",
+        "Country_Spanish": "Palestina",
+        "Flag_URL": "https://flagcdn.com/ps.svg",
+        "Sovereign_State": "No",
+        "Population": 5051953,
+        "Total Area Km2": 6020.0
+    },
+    {
+        "Continent": "Asia",
+        "Country_English": "Philippines",
+        "Country_Spanish": "Filipinas",
+        "Flag_URL": "https://flagcdn.com/ph.svg",
+        "Sovereign_State": "Yes",
+        "Population": 108323702,
+        "Total Area Km2": 300000.0
+    },
+    {
+        "Continent": "Asia",
+        "Country_English": "Qatar",
+        "Country_Spanish": "Catar",
+        "Flag_URL": "https://flagcdn.com/qa.svg",
+        "Sovereign_State": "Yes",
+        "Population": 2747282,
+        "Total Area Km2": 11586.0
+    },
+    {
+        "Continent": "Asia",
+        "Country_English": "Saudi Arabia",
+        "Country_Spanish": "Arabia Saudita",
+        "Flag_URL": "https://flagcdn.com/sa.svg",
+        "Sovereign_State": "Yes",
+        "Population": 34218169,
+        "Total Area Km2": 2149690.0
+    },
+    {
+        "Continent": "Asia",
+        "Country_English": "Singapore",
+        "Country_Spanish": "Singapur",
+        "Flag_URL": "https://flagcdn.com/sg.svg",
+        "Sovereign_State": "Yes",
+        "Population": 5703600,
+        "Total Area Km2": 716.0
+    },
+    {
+        "Continent": "Asia",
+        "Country_English": "South Korea",
+        "Country_Spanish": "Corea del Sur",
+        "Flag_URL": "https://flagcdn.com/kr.svg",
+        "Sovereign_State": "Yes",
+        "Population": 51780579,
+        "Total Area Km2": 100210.0
+    },
+    {
+        "Continent": "Asia",
+        "Country_English": "Sri Lanka",
+        "Country_Spanish": "Sri Lanka",
+        "Flag_URL": "https://flagcdn.com/lk.svg",
+        "Sovereign_State": "Yes",
+        "Population": 21803000,
+        "Total Area Km2": 65610.0
+    },
+    {
+        "Continent": "Asia",
+        "Country_English": "Syria",
+        "Country_Spanish": "Siria",
+        "Flag_URL": "https://flagcdn.com/sy.svg",
+        "Sovereign_State": "Yes",
+        "Population": 17070135,
+        "Total Area Km2": 185180.0
+    },
+    {
+        "Continent": "Asia",
+        "Country_English": "Taiwan",
+        "Country_Spanish": "Taiwán",
+        "Flag_URL": "https://flagcdn.com/tw.svg",
+        "Sovereign_State": "No",
+        "Population": 23604265,
+        "Total Area Km2": 36193.0
+    },
+    {
+        "Continent": "Asia",
+        "Country_English": "Tajikistan",
+        "Country_Spanish": "Tayikistán",
+        "Flag_URL": "https://flagcdn.com/tj.svg",
+        "Sovereign_State": "Yes",
+        "Population": 9127000,
+        "Total Area Km2": 143100.0
+    },
+    {
+        "Continent": "Asia",
+        "Country_English": "Thailand",
+        "Country_Spanish": "Tailandia",
+        "Flag_URL": "https://flagcdn.com/th.svg",
+        "Sovereign_State": "Yes",
+        "Population": 66474267,
+        "Total Area Km2": 513120.0
+    },
+    {
+        "Continent": "Asia",
+        "Country_English": "Turkey",
+        "Country_Spanish": "Turquía",
+        "Flag_URL": "https://flagcdn.com/tr.svg",
+        "Sovereign_State": "Yes",
+        "Population": 83154997,
+        "Total Area Km2": 783562.0
+    },
+    {
+        "Continent": "Asia",
+        "Country_English": "Turkmenistan",
+        "Country_Spanish": "Turkmenistán",
+        "Flag_URL": "https://flagcdn.com/tm.svg",
+        "Sovereign_State": "Yes",
+        "Population": 5942089,
+        "Total Area Km2": 488100.0
+    },
+    {
+        "Continent": "Asia",
+        "Country_English": "United Arab Emirates",
+        "Country_Spanish": "Emiratos Árabes Unidos",
+        "Flag_URL": "https://flagcdn.com/ae.svg",
+        "Sovereign_State": "Yes",
+        "Population": 9770529,
+        "Total Area Km2": 83600.0
+    },
+    {
+        "Continent": "Asia",
+        "Country_English": "Uzbekistan",
+        "Country_Spanish": "Uzbekistán",
+        "Flag_URL": "https://flagcdn.com/uz.svg",
+        "Sovereign_State": "Yes",
+        "Population": 34034952,
+        "Total Area Km2": 447400.0
+    },
+    {
+        "Continent": "Asia",
+        "Country_English": "Vietnam",
+        "Country_Spanish": "Vietnam",
+        "Flag_URL": "https://flagcdn.com/vn.svg",
+        "Sovereign_State": "Yes",
+        "Population": 96208984,
+        "Total Area Km2": 331212.0
+    },
+    {
+        "Continent": "Asia",
+        "Country_English": "Yemen",
+        "Country_Spanish": "Yemen",
+        "Flag_URL": "https://flagcdn.com/ye.svg",
+        "Sovereign_State": "Yes",
+        "Population": 29161922,
+        "Total Area Km2": 527968.0
+    },
+    {
+        "Continent": "Europe",
+        "Country_English": "Aland Islands",
+        "Country_Spanish": "Islas Åland",
+        "Flag_URL": "https://flagcdn.com/ax.svg",
+        "Sovereign_State": "No",
+        "Population": 29789,
+        "Total Area Km2": 1580.0
+    },
+    {
+        "Continent": "Europe",
+        "Country_English": "Albania",
+        "Country_Spanish": "Albania",
+        "Flag_URL": "https://flagcdn.com/al.svg",
+        "Sovereign_State": "Yes",
+        "Population": 2862427,
+        "Total Area Km2": 28748.0
+    },
+    {
+        "Continent": "Europe",
+        "Country_English": "Andorra",
+        "Country_Spanish": "Andorra",
+        "Flag_URL": "https://flagcdn.com/ad.svg",
+        "Sovereign_State": "Yes",
+        "Population": 77543,
+        "Total Area Km2": 468.0
+    },
+    {
+        "Continent": "Europe",
+        "Country_English": "Austria",
+        "Country_Spanish": "Austria",
+        "Flag_URL": "https://flagcdn.com/at.svg",
+        "Sovereign_State": "Yes",
+        "Population": 8902600,
+        "Total Area Km2": 83871.0
+    },
+    {
+        "Continent": "Europe",
+        "Country_English": "Belarus",
+        "Country_Spanish": "Bielorrusia",
+        "Flag_URL": "https://flagcdn.com/by.svg",
+        "Sovereign_State": "Yes",
+        "Population": 9413446,
+        "Total Area Km2": 207600.0
+    },
+    {
+        "Continent": "Europe",
+        "Country_English": "Belgium",
+        "Country_Spanish": "Bélgica",
+        "Flag_URL": "https://flagcdn.com/be.svg",
+        "Sovereign_State": "Yes",
+        "Population": 11522169,
+        "Total Area Km2": 30528.0
+    },
+    {
+        "Continent": "Europe",
+        "Country_English": "Bosnia and Herzegovina",
+        "Country_Spanish": "Bosnia y Herzegovina",
+        "Flag_URL": "https://flagcdn.com/ba.svg",
+        "Sovereign_State": "Yes",
+        "Population": 3301000,
+        "Total Area Km2": 51209.0
+    },
+    {
+        "Continent": "Europe",
+        "Country_English": "Bulgaria",
+        "Country_Spanish": "Bulgaria",
+        "Flag_URL": "https://flagcdn.com/bg.svg",
+        "Sovereign_State": "Yes",
+        "Population": 7000039,
+        "Total Area Km2": 111002.0
+    },
+    {
+        "Continent": "Europe",
+        "Country_English": "Croatia",
+        "Country_Spanish": "Croacia",
+        "Flag_URL": "https://flagcdn.com/hr.svg",
+        "Sovereign_State": "Yes",
+        "Population": 4076246,
+        "Total Area Km2": 56594.0
+    },
+    {
+        "Continent": "Europe",
+        "Country_English": "Cyprus",
+        "Country_Spanish": "Chipre",
+        "Flag_URL": "https://flagcdn.com/cy.svg",
+        "Sovereign_State": "Yes",
+        "Population": 875900,
+        "Total Area Km2": 9251.0
+    },
+    {
+        "Continent": "Europe",
+        "Country_English": "Czech Republic",
+        "Country_Spanish": "República Checa",
+        "Flag_URL": "https://flagcdn.com/cz.svg",
+        "Sovereign_State": "Yes",
+        "Population": 10681161,
+        "Total Area Km2": 78865.0
+    },
+    {
+        "Continent": "Europe",
+        "Country_English": "Denmark",
+        "Country_Spanish": "Dinamarca",
+        "Flag_URL": "https://flagcdn.com/dk.svg",
+        "Sovereign_State": "Yes",
+        "Population": 5822763,
+        "Total Area Km2": 43094.0
+    },
+    {
+        "Continent": "Europe",
+        "Country_English": "England",
+        "Country_Spanish": "Inglaterra",
+        "Flag_URL": "https://flagcdn.com/gb-eng.svg",
+        "Sovereign_State": "No",
+        "Population": 55977178,
+        "Total Area Km2": 130279.0
+    },
+    {
+        "Continent": "Europe",
+        "Country_English": "Estonia",
+        "Country_Spanish": "Estonia",
+        "Flag_URL": "https://flagcdn.com/ee.svg",
+        "Sovereign_State": "Yes",
+        "Population": 1328360,
+        "Total Area Km2": 45227.0
+    },
+    {
+        "Continent": "Europe",
+        "Country_English": "Faroe Islands",
+        "Country_Spanish": "Islas Feroe",
+        "Flag_URL": "https://flagcdn.com/fo.svg",
+        "Sovereign_State": "No",
+        "Population": 52124,
+        "Total Area Km2": 1393.0
+    },
+    {
+        "Continent": "Europe",
+        "Country_English": "Finland",
+        "Country_Spanish": "Finlandia",
+        "Flag_URL": "https://flagcdn.com/fi.svg",
+        "Sovereign_State": "Yes",
+        "Population": 5527573,
+        "Total Area Km2": 338424.0
+    },
+    {
+        "Continent": "Europe",
+        "Country_English": "France",
+        "Country_Spanish": "Francia",
+        "Flag_URL": "https://flagcdn.com/fr.svg",
+        "Sovereign_State": "Yes",
+        "Population": 67064000,
+        "Total Area Km2": 640679.0
+    },
+    {
+        "Continent": "Europe",
+        "Country_English": "Germany",
+        "Country_Spanish": "Alemania",
+        "Flag_URL": "https://flagcdn.com/de.svg",
+        "Sovereign_State": "Yes",
+        "Population": 83149300,
+        "Total Area Km2": 357114.0
+    },
+    {
+        "Continent": "Europe",
+        "Country_English": "Gibraltar",
+        "Country_Spanish": "Gibraltar",
+        "Flag_URL": "https://flagcdn.com/gi.svg",
+        "Sovereign_State": "No",
+        "Population": 33701,
+        "Total Area Km2": 6.0
+    },
+    {
+        "Continent": "Europe",
+        "Country_English": "Greece",
+        "Country_Spanish": "Grecia",
+        "Flag_URL": "https://flagcdn.com/gr.svg",
+        "Sovereign_State": "Yes",
+        "Population": 10724599,
+        "Total Area Km2": 131957.0
+    },
+    {
+        "Continent": "Europe",
+        "Country_English": "Guernsey",
+        "Country_Spanish": "Guernesey",
+        "Flag_URL": "https://flagcdn.com/gg.svg",
+        "Sovereign_State": "No",
+        "Population": 62792,
+        "Total Area Km2": 78.0
+    },
+    {
+        "Continent": "Europe",
+        "Country_English": "Hungary",
+        "Country_Spanish": "Hungría",
+        "Flag_URL": "https://flagcdn.com/hu.svg",
+        "Sovereign_State": "Yes",
+        "Population": 9772756,
+        "Total Area Km2": 93028.0
+    },
+    {
+        "Continent": "Europe",
+        "Country_English": "Iceland",
+        "Country_Spanish": "Islandia",
+        "Flag_URL": "https://flagcdn.com/is.svg",
+        "Sovereign_State": "Yes",
+        "Population": 364260,
+        "Total Area Km2": 103000.0
+    },
+    {
+        "Continent": "Europe",
+        "Country_English": "Ireland",
+        "Country_Spanish": "Irlanda",
+        "Flag_URL": "https://flagcdn.com/ie.svg",
+        "Sovereign_State": "Yes",
+        "Population": 4921500,
+        "Total Area Km2": 70273.0
+    },
+    {
+        "Continent": "Europe",
+        "Country_English": "Isle of Man",
+        "Country_Spanish": "Isla de Man",
+        "Flag_URL": "https://flagcdn.com/im.svg",
+        "Sovereign_State": "No",
+        "Population": 83314,
+        "Total Area Km2": 572.0
+    },
+    {
+        "Continent": "Europe",
+        "Country_English": "Italy",
+        "Country_Spanish": "Italia",
+        "Flag_URL": "https://flagcdn.com/it.svg",
+        "Sovereign_State": "Yes",
+        "Population": 60247214,
+        "Total Area Km2": 301339.0
+    },
+    {
+        "Continent": "Europe",
+        "Country_English": "Jersey",
+        "Country_Spanish": "Jersey",
+        "Flag_URL": "https://flagcdn.com/je.svg",
+        "Sovereign_State": "No",
+        "Population": 106800,
+        "Total Area Km2": 116.0
+    },
+    {
+        "Continent": "Europe",
+        "Country_English": "Kosovo",
+        "Country_Spanish": "Kosovo",
+        "Flag_URL": "https://flagcdn.com/xk.svg",
+        "Sovereign_State": "No",
+        "Population": 1831000,
+        "Total Area Km2": 10887.0
+    },
+    {
+        "Continent": "Europe",
+        "Country_English": "Latvia",
+        "Country_Spanish": "Letonia",
+        "Flag_URL": "https://flagcdn.com/lv.svg",
+        "Sovereign_State": "Yes",
+        "Population": 1906800,
+        "Total Area Km2": 64559.0
+    },
+    {
+        "Continent": "Europe",
+        "Country_English": "Liechtenstein",
+        "Country_Spanish": "Liechtenstein",
+        "Flag_URL": "https://flagcdn.com/li.svg",
+        "Sovereign_State": "Yes",
+        "Population": 38557,
+        "Total Area Km2": 160.0
+    },
+    {
+        "Continent": "Europe",
+        "Country_English": "Lithuania",
+        "Country_Spanish": "Lituania",
+        "Flag_URL": "https://flagcdn.com/lt.svg",
+        "Sovereign_State": "Yes",
+        "Population": 2793350,
+        "Total Area Km2": 65300.0
+    },
+    {
+        "Continent": "Europe",
+        "Country_English": "Luxembourg",
+        "Country_Spanish": "Luxemburgo",
+        "Flag_URL": "https://flagcdn.com/lu.svg",
+        "Sovereign_State": "Yes",
+        "Population": 613894,
+        "Total Area Km2": 2586.0
+    },
+    {
+        "Continent": "Europe",
+        "Country_English": "Malta",
+        "Country_Spanish": "Malta",
+        "Flag_URL": "https://flagcdn.com/mt.svg",
+        "Sovereign_State": "Yes",
+        "Population": 493559,
+        "Total Area Km2": 316.0
+    },
+    {
+        "Continent": "Europe",
+        "Country_English": "Moldova",
+        "Country_Spanish": "Moldavia",
+        "Flag_URL": "https://flagcdn.com/md.svg",
+        "Sovereign_State": "Yes",
+        "Population": 2681735,
+        "Total Area Km2": 33846.0
+    },
+    {
+        "Continent": "Europe",
+        "Country_English": "Monaco",
+        "Country_Spanish": "Mónaco",
+        "Flag_URL": "https://flagcdn.com/mc.svg",
+        "Sovereign_State": "Yes",
+        "Population": 38300,
+        "Total Area Km2": 2.02
+    },
+    {
+        "Continent": "Europe",
+        "Country_English": "Montenegro",
+        "Country_Spanish": "Montenegro",
+        "Flag_URL": "https://flagcdn.com/me.svg",
+        "Sovereign_State": "Yes",
+        "Population": 622359,
+        "Total Area Km2": 13812.0
+    },
+    {
+        "Continent": "Europe",
+        "Country_English": "Netherlands",
+        "Country_Spanish": "Países Bajos",
+        "Flag_URL": "https://flagcdn.com/nl.svg",
+        "Sovereign_State": "Yes",
+        "Population": 17438081,
+        "Total Area Km2": 41850.0
+    },
+    {
+        "Continent": "Europe",
+        "Country_English": "North Macedonia",
+        "Country_Spanish": "Macedonia del Norte",
+        "Flag_URL": "https://flagcdn.com/mk.svg",
+        "Sovereign_State": "Yes",
+        "Population": 2077132,
+        "Total Area Km2": 25713.0
+    },
+    {
+        "Continent": "Europe",
+        "Country_English": "Northern Ireland",
+        "Country_Spanish": "Irlanda del Norte",
+        "Flag_URL": "https://flagcdn.com/gb-nir.svg",
+        "Sovereign_State": "No",
+        "Population": 1885400,
+        "Total Area Km2": 14130.0
+    },
+    {
+        "Continent": "Europe",
+        "Country_English": "Norway",
+        "Country_Spanish": "Noruega",
+        "Flag_URL": "https://flagcdn.com/no.svg",
+        "Sovereign_State": "Yes",
+        "Population": 5356789,
+        "Total Area Km2": 323802.0
+    },
+    {
+        "Continent": "Europe",
+        "Country_English": "Poland",
+        "Country_Spanish": "Polonia",
+        "Flag_URL": "https://flagcdn.com/pl.svg",
+        "Sovereign_State": "Yes",
+        "Population": 38386000,
+        "Total Area Km2": 312696.0
+    },
+    {
+        "Continent": "Europe",
+        "Country_English": "Portugal",
+        "Country_Spanish": "Portugal",
+        "Flag_URL": "https://flagcdn.com/pt.svg",
+        "Sovereign_State": "Yes",
+        "Population": 10276617,
+        "Total Area Km2": 92090.0
+    },
+    {
+        "Continent": "Europe",
+        "Country_English": "Romania",
+        "Country_Spanish": "Rumania",
+        "Flag_URL": "https://flagcdn.com/ro.svg",
+        "Sovereign_State": "Yes",
+        "Population": 19405156,
+        "Total Area Km2": 238397.0
+    },
+    {
+        "Continent": "Europe",
+        "Country_English": "Russia",
+        "Country_Spanish": "Rusia",
+        "Flag_URL": "https://flagcdn.com/ru.svg",
+        "Sovereign_State": "Yes",
+        "Population": 146780720,
+        "Total Area Km2": 17098200.0
+    },
+    {
+        "Continent": "Europe",
+        "Country_English": "San Marino",
+        "Country_Spanish": "San Marino",
+        "Flag_URL": "https://flagcdn.com/sm.svg",
+        "Sovereign_State": "Yes",
+        "Population": 33574,
+        "Total Area Km2": 61.0
+    },
+    {
+        "Continent": "Europe",
+        "Country_English": "Scotland",
+        "Country_Spanish": "Escocia",
+        "Flag_URL": "https://flagcdn.com/gb-sct.svg",
+        "Sovereign_State": "No",
+        "Population": 5424800,
+        "Total Area Km2": 77933.0
+    },
+    {
+        "Continent": "Europe",
+        "Country_English": "Serbia",
+        "Country_Spanish": "Serbia",
+        "Flag_URL": "https://flagcdn.com/rs.svg",
+        "Sovereign_State": "Yes",
+        "Population": 6963764,
+        "Total Area Km2": 88361.0
+    },
+    {
+        "Continent": "Europe",
+        "Country_English": "Slovakia",
+        "Country_Spanish": "Eslovaquia",
+        "Flag_URL": "https://flagcdn.com/sk.svg",
+        "Sovereign_State": "Yes",
+        "Population": 5456362,
+        "Total Area Km2": 49037.0
+    },
+    {
+        "Continent": "Europe",
+        "Country_English": "Slovenia",
+        "Country_Spanish": "Eslovenia",
+        "Flag_URL": "https://flagcdn.com/si.svg",
+        "Sovereign_State": "Yes",
+        "Population": 2094060,
+        "Total Area Km2": 20273.0
+    },
+    {
+        "Continent": "Europe",
+        "Country_English": "Spain",
+        "Country_Spanish": "España",
+        "Flag_URL": "https://flagcdn.com/es.svg",
+        "Sovereign_State": "Yes",
+        "Population": 47100396,
+        "Total Area Km2": 505992.0
+    },
+    {
+        "Continent": "Europe",
+        "Country_English": "Sweden",
+        "Country_Spanish": "Suecia",
+        "Flag_URL": "https://flagcdn.com/se.svg",
+        "Sovereign_State": "Yes",
+        "Population": 10327589,
+        "Total Area Km2": 450295.0
+    },
+    {
+        "Continent": "Europe",
+        "Country_English": "Switzerland",
+        "Country_Spanish": "Suiza",
+        "Flag_URL": "https://flagcdn.com/ch.svg",
+        "Sovereign_State": "Yes",
+        "Population": 8586550,
+        "Total Area Km2": 41284.0
+    },
+    {
+        "Continent": "Europe",
+        "Country_English": "Ukraine",
+        "Country_Spanish": "Ucrania",
+        "Flag_URL": "https://flagcdn.com/ua.svg",
+        "Sovereign_State": "Yes",
+        "Population": 41902416,
+        "Total Area Km2": 603500.0
+    },
+    {
+        "Continent": "Europe",
+        "Country_English": "United Kingdom",
+        "Country_Spanish": "Reino Unido",
+        "Flag_URL": "https://flagcdn.com/gb.svg",
+        "Sovereign_State": "Yes",
+        "Population": 66435600,
+        "Total Area Km2": 242495.0
+    },
+    {
+        "Continent": "Europe",
+        "Country_English": "Vatican City",
+        "Country_Spanish": "Ciudad del Vaticano",
+        "Flag_URL": "https://flagcdn.com/va.svg",
+        "Sovereign_State": "No",
+        "Population": 799,
+        "Total Area Km2": 0.44
+    },
+    {
+        "Continent": "Africa",
+        "Country_English": "Saint Helena",
+        "Country_Spanish": "Santa Elena",
+        "Flag_URL": "https://flagcdn.com/sh.svg",
+        "Sovereign_State": "No",
+        "Population": 5633,
+        "Total Area Km2": 394.0
+    },
+    {
+        "Continent": "Oceania",
+        "Country_English": "American Samoa",
+        "Country_Spanish": "Samoa Americana",
+        "Flag_URL": "https://flagcdn.com/as.svg",
+        "Sovereign_State": "No",
+        "Population": 56700,
+        "Total Area Km2": 199.0
+    },
+    {
+        "Continent": "Oceania",
+        "Country_English": "Australia",
+        "Country_Spanish": "Australia",
+        "Flag_URL": "https://flagcdn.com/au.svg",
+        "Sovereign_State": "Yes",
+        "Population": 25627280,
+        "Total Area Km2": 7692020.0
+    },
+    {
+        "Continent": "Oceania",
+        "Country_English": "Cook Islands",
+        "Country_Spanish": "Islas Cook",
+        "Flag_URL": "https://flagcdn.com/ck.svg",
+        "Sovereign_State": "No",
+        "Population": 15200,
+        "Total Area Km2": 236.0
+    },
+    {
+        "Continent": "Oceania",
+        "Country_English": "Fiji",
+        "Country_Spanish": "Fiyi",
+        "Flag_URL": "https://flagcdn.com/fj.svg",
+        "Sovereign_State": "Yes",
+        "Population": 884887,
+        "Total Area Km2": 18272.0
+    },
+    {
+        "Continent": "Oceania",
+        "Country_English": "French Polynesia",
+        "Country_Spanish": "Polinesia Francesa",
+        "Flag_URL": "https://flagcdn.com/pf.svg",
+        "Sovereign_State": "No",
+        "Population": 275918,
+        "Total Area Km2": 4167.0
+    },
+    {
+        "Continent": "Oceania",
+        "Country_English": "Guam",
+        "Country_Spanish": "Guam",
+        "Flag_URL": "https://flagcdn.com/gu.svg",
+        "Sovereign_State": "No",
+        "Population": 172400,
+        "Total Area Km2": 549.0
+    },
+    {
+        "Continent": "Oceania",
+        "Country_English": "Kiribati",
+        "Country_Spanish": "Kiribati",
+        "Flag_URL": "https://flagcdn.com/ki.svg",
+        "Sovereign_State": "Yes",
+        "Population": 120100,
+        "Total Area Km2": 811.0
+    },
+    {
+        "Continent": "Oceania",
+        "Country_English": "Marshall Islands",
+        "Country_Spanish": "Islas Marshall",
+        "Flag_URL": "https://flagcdn.com/mh.svg",
+        "Sovereign_State": "Yes",
+        "Population": 55500,
+        "Total Area Km2": 181.0
+    },
+    {
+        "Continent": "Oceania",
+        "Country_English": "Micronesia",
+        "Country_Spanish": "Micronesia",
+        "Flag_URL": "https://flagcdn.com/fm.svg",
+        "Sovereign_State": "Yes",
+        "Population": 104468,
+        "Total Area Km2": 702.0
+    },
+    {
+        "Continent": "Oceania",
+        "Country_English": "Nauru",
+        "Country_Spanish": "Nauru",
+        "Flag_URL": "https://flagcdn.com/nr.svg",
+        "Sovereign_State": "Yes",
+        "Population": 11000,
+        "Total Area Km2": 21.0
+    },
+    {
+        "Continent": "Oceania",
+        "Country_English": "New Caledonia",
+        "Country_Spanish": "Nueva Caledonia",
+        "Flag_URL": "https://flagcdn.com/nc.svg",
+        "Sovereign_State": "No",
+        "Population": 282200,
+        "Total Area Km2": 18575.0
+    },
+    {
+        "Continent": "Oceania",
+        "Country_English": "New Zealand",
+        "Country_Spanish": "Nueva Zelanda",
+        "Flag_URL": "https://flagcdn.com/nz.svg",
+        "Sovereign_State": "Yes",
+        "Population": 4961213,
+        "Total Area Km2": 270467.0
+    },
+    {
+        "Continent": "Oceania",
+        "Country_English": "Niue",
+        "Country_Spanish": "Niue",
+        "Flag_URL": "https://flagcdn.com/nu.svg",
+        "Sovereign_State": "No",
+        "Population": 1520,
+        "Total Area Km2": 260.0
+    },
+    {
+        "Continent": "Oceania",
+        "Country_English": "Norfolk Island",
+        "Country_Spanish": "Isla Norfolk",
+        "Flag_URL": "https://flagcdn.com/nf.svg",
+        "Sovereign_State": "No",
+        "Population": 1756,
+        "Total Area Km2": 36.0
+    },
+    {
+        "Continent": "Oceania",
+        "Country_English": "Northern Mariana Islands",
+        "Country_Spanish": "Islas Marianas del Norte",
+        "Flag_URL": "https://flagcdn.com/mp.svg",
+        "Sovereign_State": "No",
+        "Population": 56200,
+        "Total Area Km2": 464.0
+    },
+    {
+        "Continent": "Oceania",
+        "Country_English": "Palau",
+        "Country_Spanish": "Palaos",
+        "Flag_URL": "https://flagcdn.com/pw.svg",
+        "Sovereign_State": "Yes",
+        "Population": 17900,
+        "Total Area Km2": 459.0
+    },
+    {
+        "Continent": "Oceania",
+        "Country_English": "Papua New Guinea",
+        "Country_Spanish": "Papúa Nueva Guinea",
+        "Flag_URL": "https://flagcdn.com/pg.svg",
+        "Sovereign_State": "Yes",
+        "Population": 8935000,
+        "Total Area Km2": 462840.0
+    },
+    {
+        "Continent": "Oceania",
+        "Country_English": "Pitcairn Islands",
+        "Country_Spanish": "Islas Pitcairn",
+        "Flag_URL": "https://flagcdn.com/pn.svg",
+        "Sovereign_State": "No",
+        "Population": 50,
+        "Total Area Km2": 47.0
+    },
+    {
+        "Continent": "Oceania",
+        "Country_English": "Samoa",
+        "Country_Spanish": "Samoa",
+        "Flag_URL": "https://flagcdn.com/ws.svg",
+        "Sovereign_State": "Yes",
+        "Population": 200874,
+        "Total Area Km2": 2842.0
+    },
+    {
+        "Continent": "Oceania",
+        "Country_English": "Solomon Islands",
+        "Country_Spanish": "Islas Salomón",
+        "Flag_URL": "https://flagcdn.com/sb.svg",
+        "Sovereign_State": "Yes",
+        "Population": 680806,
+        "Total Area Km2": 28896.0
+    },
+    {
+        "Continent": "Oceania",
+        "Country_English": "Tokelau",
+        "Country_Spanish": "Tokelau",
+        "Flag_URL": "https://flagcdn.com/tk.svg",
+        "Sovereign_State": "No",
+        "Population": 1400,
+        "Total Area Km2": 12.0
+    },
+    {
+        "Continent": "Oceania",
+        "Country_English": "Tonga",
+        "Country_Spanish": "Tonga",
+        "Flag_URL": "https://flagcdn.com/to.svg",
+        "Sovereign_State": "Yes",
+        "Population": 100651,
+        "Total Area Km2": 747.0
+    },
+    {
+        "Continent": "Oceania",
+        "Country_English": "Tuvalu",
+        "Country_Spanish": "Tuvalu",
+        "Flag_URL": "https://flagcdn.com/tv.svg",
+        "Sovereign_State": "Yes",
+        "Population": 10200,
+        "Total Area Km2": 26.0
+    },
+    {
+        "Continent": "Oceania",
+        "Country_English": "Vanuatu",
+        "Country_Spanish": "Vanuatu",
+        "Flag_URL": "https://flagcdn.com/vu.svg",
+        "Sovereign_State": "Yes",
+        "Population": 304500,
+        "Total Area Km2": 12189.0
+    }
+]
