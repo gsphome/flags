@@ -74,6 +74,12 @@ h1::after {
     animation: bounce 2s infinite;
 }
 
+@media (max-width: 600px) {
+    h1::after {
+        display: none;
+    }
+}
+
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
     40% { transform: translateY(-10px); }
@@ -116,7 +122,7 @@ h1::after {
     background: rgba(30, 41, 59, 0.98);
     backdrop-filter: blur(15px);
     border-radius: 20px;
-    padding: 20px;
+    padding: 35px 20px 20px 20px;
     display: flex;
     gap: 12px;
     align-items: center;
@@ -127,6 +133,33 @@ h1::after {
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
     min-width: 300px;
+}
+
+.filter-close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 24px;
+    height: 24px;
+    border: none;
+    background: rgba(239, 68, 68, 0.8);
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: bold;
+    transition: all 0.2s ease;
+    order: -1;
+    backdrop-filter: blur(5px);
+}
+
+.filter-close-btn:hover {
+    background: rgba(239, 68, 68, 1);
+    transform: scale(1.1);
+    box-shadow: 0 2px 8px rgba(239, 68, 68, 0.4);
 }
 
 #filterContainer.show {
@@ -404,21 +437,37 @@ h1::after {
 /* --- RESPONSIVIDAD --- */
 @media (max-width: 600px) {
     .container {
-        margin: 10px 10px 100px 10px;
+        margin: 10px 10px 20px 10px;
         padding: 20px;
     }
     
     h1 {
-        font-size: 2rem;
+        font-size: 0;
+        margin-bottom: 10px;
+    }
+    
+    h1::before {
+        content: 'Flag Quiz';
+        font-size: 1.6rem;
+        background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 700;
     }
     
     .flag {
-        height: 180px;
+        height: 150px;
+        margin-bottom: 10px;
+    }
+    
+    #countryInfo {
+        font-size: 1.1rem;
+        margin: 10px 0;
     }
     
     #filterContainer {
         min-width: 280px;
-        padding: 15px;
+        padding: 40px 15px 15px 15px;
         flex-direction: column;
         gap: 8px;
     }
@@ -426,19 +475,33 @@ h1::after {
     #continentFilter, #sovereignFilter, #maxCountries {
         width: 100%;
         min-width: auto;
+        height: 35px;
+        font-size: 0.8rem;
+        -webkit-appearance: none;
+        -moz-appearance: textfield;
+    }
+    
+    #maxCountries::-webkit-outer-spin-button,
+    #maxCountries::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
     }
     
     #teamsContainer {
-        flex-direction: column;
-        gap: 10px;
+        gap: 6px;
+        margin-top: 10px;
+        flex-wrap: nowrap;
     }
     
     #redCounter, #blueCounter, #greenCounter {
-        width: 100%;
+        padding: 6px 8px;
+        font-size: 0.75rem;
+        min-width: 60px;
+        flex: 1;
     }
     
     #startButton {
-        bottom: 20px;
+        bottom: 80px;
         right: 20px;
         width: 60px;
         height: 60px;
@@ -446,23 +509,25 @@ h1::after {
     }
     
     #settingsButton {
-        top: 20px;
-        right: 20px;
-        width: 45px;
-        height: 45px;
-        font-size: 1rem;
+        bottom: 80px;
+        left: 20px;
+        top: auto;
+        right: auto;
+        width: 40px;
+        height: 40px;
+        font-size: 0.9rem;
     }
     
     .modal-content {
-        padding: 20px;
-        max-width: 350px;
+        padding: 15px;
+        max-width: 320px;
     }
     
     .modal-header h2 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     
     .winner-announcement h3 {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 }

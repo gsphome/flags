@@ -44,6 +44,13 @@ export class GameView {
         const container = document.createElement('div');
         container.id = 'filterContainer';
         
+        // Crear botón de cierre
+        const closeButton = document.createElement('button');
+        closeButton.innerHTML = '✕';
+        closeButton.className = 'filter-close-btn';
+        closeButton.onclick = () => this.closeSettingsPanel();
+        
+        container.appendChild(closeButton);
         container.appendChild(elements.continentFilter);
         container.appendChild(elements.sovereignFilter);
         container.appendChild(elements.maxCountriesInput);
@@ -142,6 +149,10 @@ export class GameView {
     }
 
     hideSettingsPanel() {
+        this.closeSettingsPanel();
+    }
+    
+    closeSettingsPanel() {
         const filterContainer = document.getElementById('filterContainer');
         const settingsButton = document.getElementById('settingsButton');
         
