@@ -13,6 +13,11 @@ export class GameController {
         this.gameService = new GameService(this.gameState);
         this.view = new GameView();
         this.filteredCountries = [];
+        this.startTime = null;
+        this.timerInterval = null;
+        this.countdownInterval = null;
+        this.countdownSeconds = 5;
+        this.countryInfoRevealed = false;
         
         this.initializeGame();
     }
@@ -34,10 +39,15 @@ export class GameController {
         // Filter change listeners
         this.view.elements.continentFilter.onchange = () => this.updateMaxCountriesLimit();
         this.view.elements.sovereignFilter.onchange = () => this.updateMaxCountriesLimit();
-        this.view.elements.maxCountriesInput.addEventListener('input', () => this.validateMaxCountriesInput());
+        this.view.elements.maxCountriesInput.addEventListener('input', () => this.filterNumericInput());
+        this.view.elements.maxCountriesInput.addEventListener('blur', () => this.validateMaxCountriesInput());
         
         // Flag click to reveal answer
-        this.view.elements.flagImage.onclick = () => this.view.showCountryInfo();
+        this.view.elements.flagImage.onclick = () => {
+            if (!this.countryInfoRevealed) {
+                this.revealCountryInfo();
+            }
+        };
         
         // Team scoring
         Object.keys(this.view.elements.teamCounters).forEach(teamColor => {
@@ -68,11 +78,16 @@ export class GameController {
         this.view.hideSettingsPanel();
         this.view.setSettingsButtonVisible(false);
         this.resetTeamScores();
+        this.startTimer();
+        this.view.showProgressContainer();
+        this.updateProgress();
         this.displayCurrentFlag();
     }
 
     endGame() {
         this.gameService.endGame();
+        this.stopTimer();
+        this.resetCountryState();
         this.updateFinalScores();
         this.view.showGameEndMessage(this.gameState.teamScores);
         this.view.setDefaultFlag();
@@ -80,6 +95,7 @@ export class GameController {
         this.view.updateStartButton(false);
         this.view.setFiltersEnabled(true);
         this.view.setSettingsButtonVisible(true);
+        this.view.hideProgressContainer();
         this.resetTeamScores();
     }
 
@@ -87,8 +103,8 @@ export class GameController {
         if (!this.gameState.isActive) return;
         
         // Show country info if not visible
-        if (this.view.elements.countryInfo.style.visibility !== 'visible') {
-            this.view.showCountryInfo();
+        if (!this.countryInfoRevealed) {
+            this.revealCountryInfo();
             return;
         }
 
@@ -96,6 +112,8 @@ export class GameController {
         const scoreProcessed = this.gameService.processTeamScore(teamColor);
         if (scoreProcessed) {
             this.view.updateTeamScore(teamColor, this.gameState.teamScores[teamColor]);
+            this.updateProgress();
+            this.resetCountryState();
             this.displayCurrentFlag();
         }
     }
@@ -105,6 +123,7 @@ export class GameController {
         
         if (currentCountry) {
             this.view.updateFlagDisplay(currentCountry);
+            this.startCountdown();
         } else {
             this.endGame();
         }
@@ -116,11 +135,22 @@ export class GameController {
         this.view.updateMaxCountriesInput(maxCount);
     }
 
+    filterNumericInput() {
+        const input = this.view.elements.maxCountriesInput;
+        // Solo permitir números, eliminar cualquier carácter no numérico
+        input.value = input.value.replace(/[^0-9]/g, '');
+    }
+
     validateMaxCountriesInput() {
         const input = this.view.elements.maxCountriesInput;
         const max = parseInt(input.max, 10);
         const min = parseInt(input.min, 10);
         let value = parseInt(input.value, 10);
+
+        // Si el campo está vacío, no validar hasta que el usuario termine
+        if (input.value === '') {
+            return;
+        }
 
         if (isNaN(value) || value < min) {
             value = min;
@@ -141,5 +171,65 @@ export class GameController {
         Object.keys(this.gameState.teamScores).forEach(teamColor => {
             this.view.updateTeamScore(teamColor, this.gameState.teamScores[teamColor]);
         });
+    }
+
+    startTimer() {
+        this.startTime = Date.now();
+        this.timerInterval = setInterval(() => {
+            const elapsed = Math.floor((Date.now() - this.startTime) / 1000);
+            this.view.updateTimer(elapsed);
+        }, 1000);
+    }
+
+    stopTimer() {
+        if (this.timerInterval) {
+            clearInterval(this.timerInterval);
+            this.timerInterval = null;
+        }
+        this.stopCountdown();
+    }
+
+    startCountdown() {
+        this.stopCountdown();
+        this.countdownSeconds = 5;
+        this.countryInfoRevealed = false;
+        this.view.showCountdown();
+        this.view.updateCountdown(this.countdownSeconds);
+        
+        this.countdownInterval = setInterval(() => {
+            this.countdownSeconds--;
+            this.view.updateCountdown(this.countdownSeconds);
+            
+            if (this.countdownSeconds <= 0) {
+                this.revealCountryInfo();
+            }
+        }, 1000);
+    }
+
+    stopCountdown() {
+        if (this.countdownInterval) {
+            clearInterval(this.countdownInterval);
+            this.countdownInterval = null;
+        }
+        this.view.hideCountdown();
+    }
+
+    revealCountryInfo() {
+        if (!this.countryInfoRevealed) {
+            this.countryInfoRevealed = true;
+            this.view.showCountryInfo();
+            this.stopCountdown();
+        }
+    }
+
+    resetCountryState() {
+        this.countryInfoRevealed = false;
+        this.stopCountdown();
+    }
+
+    updateProgress() {
+        const total = this.filteredCountries.length;
+        const current = this.gameState.currentIndex;
+        this.view.updateProgress(current, total);
     }
 }

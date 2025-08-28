@@ -21,6 +21,7 @@ export class GameView {
         elements.filterContainer = this.createFilterContainer(elements);
         elements.settingsButton = this.createSettingsButton();
         elements.teamCounters = this.createTeamCounters(elements);
+        elements.progressContainer = this.createProgressContainer();
         
         return elements;
     }
@@ -108,6 +109,47 @@ export class GameView {
         });
         
         return counters;
+    }
+
+    createProgressContainer() {
+        const container = document.createElement('div');
+        container.id = 'progressContainer';
+        container.className = 'progress-container';
+        
+        const progressBar = document.createElement('div');
+        progressBar.className = 'progress-bar';
+        
+        const progressFill = document.createElement('div');
+        progressFill.className = 'progress-fill';
+        progressFill.id = 'progressFill';
+        
+        const progressText = document.createElement('div');
+        progressText.className = 'progress-text';
+        progressText.id = 'progressText';
+        progressText.textContent = '0 / 0';
+        
+        const timer = document.createElement('div');
+        timer.className = 'timer';
+        timer.id = 'timer';
+        timer.textContent = '00:00';
+        
+        const countdownTimer = document.createElement('div');
+        countdownTimer.className = 'countdown-timer';
+        countdownTimer.id = 'countdownTimer';
+        countdownTimer.textContent = '5';
+        
+        progressBar.appendChild(progressFill);
+        container.appendChild(progressText);
+        container.appendChild(progressBar);
+        const timerContainer = document.createElement('div');
+        timerContainer.className = 'timer-container';
+        timerContainer.appendChild(timer);
+        timerContainer.appendChild(countdownTimer);
+        container.appendChild(timerContainer);
+        
+        document.querySelector('.container').insertBefore(container, document.getElementById('flagImage'));
+        
+        return { container, progressFill, progressText, timer, countdownTimer };
     }
 
     setupEventListeners() {
@@ -231,6 +273,55 @@ export class GameView {
     clearCountryInfo() {
         this.elements.countryInfo.textContent = '';
         this.elements.countryInfo.style.visibility = 'hidden';
+    }
+
+    updateProgress(current, total) {
+        if (window.innerWidth > 600) {
+            const percentage = total > 0 ? (current / total) * 100 : 0;
+            this.elements.progressContainer.progressFill.style.width = `${percentage}%`;
+            this.elements.progressContainer.progressText.textContent = `${current} / ${total}`;
+        }
+    }
+
+    updateTimer(seconds) {
+        if (window.innerWidth > 600) {
+            const minutes = Math.floor(seconds / 60);
+            const secs = seconds % 60;
+            this.elements.progressContainer.timer.textContent = 
+                `${minutes.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+        }
+    }
+
+    updateCountdown(seconds) {
+        if (window.innerWidth > 600) {
+            this.elements.progressContainer.countdownTimer.textContent = seconds;
+            this.elements.progressContainer.countdownTimer.className = 
+                seconds <= 2 ? 'countdown-timer urgent' : 'countdown-timer';
+        }
+    }
+
+    hideCountdown() {
+        if (window.innerWidth > 600) {
+            this.elements.progressContainer.countdownTimer.style.display = 'none';
+        }
+    }
+
+    showCountdown() {
+        if (window.innerWidth > 600) {
+            this.elements.progressContainer.countdownTimer.style.display = 'block';
+        }
+    }
+
+    showProgressContainer() {
+        if (window.innerWidth > 600) {
+            this.elements.progressContainer.container.style.display = 'block';
+        }
+    }
+
+    hideProgressContainer() {
+        if (window.innerWidth > 600) {
+            this.elements.progressContainer.container.style.display = 'none';
+        }
     }
 
     showGameEndMessage(teamScores) {
