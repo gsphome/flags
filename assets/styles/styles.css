@@ -1,0 +1,468 @@
+/* --- VARIABLES DE COLOR (TEMA AZUL/VERDE) --- */
+:root {
+    --dark-bg: #0f172a; /* Azul noche muy oscuro */
+    --primary-text: #ffffff;
+    --secondary-text: #94a3b8; /* Gris azulado */
+    --gradient-start: #34d399; /* Verde esmeralda claro */
+    --gradient-end: #2563eb;   /* Azul vibrante */
+    --card-bg: #1e293b; /* Azul pizarra oscuro */
+    --success-color: #34d399; /* Verde esmeralda para acierto */
+    --error-color: #ef4444;   /* Rojo para error */
+    --team-red: #ef4444;
+    --team-blue: #3b82f6;
+    --team-green: #10b981;
+}
+
+/* --- IMPORTACIÓN DE FUENTE --- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* --- ESTILOS GENERALES --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--dark-bg);
+    color: var(--primary-text);
+    min-height: 100vh;
+    padding: 20px;
+    background-image: radial-gradient(circle at top right, rgba(37, 99, 235, 0.2), transparent 40%),
+                      radial-gradient(circle at bottom left, rgba(52, 211, 153, 0.2), transparent 50%);
+}
+
+/* --- CONTENEDOR PRINCIPAL --- */
+.container {
+    max-width: 500px;
+    margin: 20px auto 100px auto;
+    background-color: var(--card-bg);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* --- TÍTULO --- */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* Emoji decorativo juvenil */
+h1::after {
+    content: '🌍';
+    position: absolute;
+    top: -10px;
+    right: -40px;
+    font-size: 1.5rem;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-10px); }
+    60% { transform: translateY(-5px); }
+}
+
+/* --- BANDERA --- */
+.flag {
+    width: 100%;
+    max-width: 350px;
+    height: 220px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.flag:hover {
+    transform: scale(1.02);
+}
+
+/* --- INFORMACIÓN DEL PAÍS --- */
+#countryInfo {
+    margin: 15px 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--gradient-start);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* --- CONTROLES DE FILTROS (OCULTOS POR DEFECTO) --- */
+#filterContainer {
+    position: fixed;
+    top: -200px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(30, 41, 59, 0.98);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    z-index: 1001;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+    min-width: 300px;
+}
+
+#filterContainer.show {
+    top: 20px;
+}
+
+/* --- BOTÓN DE CONFIGURACIÓN --- */
+#settingsButton {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    color: var(--primary-text);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 1002;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    backdrop-filter: blur(10px);
+}
+
+#settingsButton:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: rotate(90deg) scale(1.1);
+    border-color: var(--gradient-start);
+}
+
+#settingsButton.active {
+    background: var(--gradient-start);
+    color: var(--dark-bg);
+    transform: rotate(180deg);
+}
+
+#continentFilter, #sovereignFilter, #maxCountries {
+    height: 40px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.15);
+    color: var(--primary-text);
+    text-align: center;
+    padding: 0 15px;
+    min-width: 110px;
+    transition: all 0.3s ease;
+    appearance: none;
+}
+
+#continentFilter option, #sovereignFilter option {
+    background-color: var(--card-bg);
+    color: var(--primary-text);
+}
+
+#continentFilter:hover, #sovereignFilter:hover, #maxCountries:hover {
+    border-color: var(--gradient-start);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#continentFilter:focus, #sovereignFilter:focus, #maxCountries:focus {
+    outline: none;
+    border-color: var(--gradient-end);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+/* --- BOTÓN PRINCIPAL (FLOATING ACTION BUTTON) --- */
+#startButton {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--dark-bg);
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 8px 25px rgba(52, 211, 153, 0.4);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1;
+}
+
+#startButton:hover {
+    transform: scale(1.1) translateY(-3px);
+    box-shadow: 0 12px 35px rgba(52, 211, 153, 0.6);
+    background: linear-gradient(135deg, #22c55e, #1d4ed8);
+}
+
+#startButton:active {
+    transform: scale(1.05) translateY(-1px);
+    transition: all 0.1s ease;
+}
+
+/* Efecto de pulso para llamar la atención */
+@keyframes pulse {
+    0% { box-shadow: 0 8px 25px rgba(52, 211, 153, 0.4); }
+    50% { box-shadow: 0 8px 25px rgba(52, 211, 153, 0.8), 0 0 0 10px rgba(52, 211, 153, 0.1); }
+    100% { box-shadow: 0 8px 25px rgba(52, 211, 153, 0.4); }
+}
+
+#startButton.pulse {
+    animation: pulse 2s infinite;
+}
+
+/* --- CONTENEDOR DE EQUIPOS --- */
+#teamsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+/* --- CONTADORES DE EQUIPOS --- */
+#redCounter, #blueCounter, #greenCounter {
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    min-width: 120px;
+    text-align: center;
+}
+
+#redCounter {
+    background: linear-gradient(135deg, var(--team-red), #dc2626);
+    color: white;
+}
+
+#blueCounter {
+    background: linear-gradient(135deg, #6b7280, #4b5563);
+    color: white;
+}
+
+#greenCounter {
+    background: linear-gradient(135deg, var(--team-green), var(--gradient-start));
+    color: white;
+}
+
+#redCounter:hover, #blueCounter:hover, #greenCounter:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+#redCounter:active, #blueCounter:active, #greenCounter:active {
+    transform: translateY(-1px);
+}
+
+/* --- MODAL DE FIN DE JUEGO --- */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    animation: fadeIn 0.3s ease;
+}
+
+.modal-content {
+    background: var(--card-bg);
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 400px;
+    width: 90%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    animation: scaleIn 0.3s ease;
+}
+
+@keyframes scaleIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.modal-header h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
+.winner-announcement {
+    margin-bottom: 25px;
+    padding: 15px;
+    background: rgba(52, 211, 153, 0.1);
+    border-radius: 12px;
+    border: 1px solid rgba(52, 211, 153, 0.3);
+}
+
+.winner-announcement h3 {
+    font-size: 1.3rem;
+    color: var(--gradient-start);
+    margin: 0;
+}
+
+.final-scores {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.score-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.score-item.red {
+    background: linear-gradient(135deg, rgba(239, 68, 68, 0.2), rgba(220, 38, 38, 0.1));
+    border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.score-item.blue {
+    background: linear-gradient(135deg, rgba(107, 114, 128, 0.2), rgba(75, 85, 99, 0.1));
+    border: 1px solid rgba(107, 114, 128, 0.3);
+}
+
+.score-item.green {
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.2), rgba(52, 211, 153, 0.1));
+    border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.score-item .score {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.modal-close-btn {
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+    color: var(--dark-bg);
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(52, 211, 153, 0.3);
+}
+
+.modal-close-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(52, 211, 153, 0.4);
+}
+
+/* --- RESPONSIVIDAD --- */
+@media (max-width: 600px) {
+    .container {
+        margin: 10px 10px 100px 10px;
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .flag {
+        height: 180px;
+    }
+    
+    #filterContainer {
+        min-width: 280px;
+        padding: 15px;
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    #continentFilter, #sovereignFilter, #maxCountries {
+        width: 100%;
+        min-width: auto;
+    }
+    
+    #teamsContainer {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    #redCounter, #blueCounter, #greenCounter {
+        width: 100%;
+    }
+    
+    #startButton {
+        bottom: 20px;
+        right: 20px;
+        width: 60px;
+        height: 60px;
+        font-size: 1rem;
+    }
+    
+    #settingsButton {
+        top: 20px;
+        right: 20px;
+        width: 45px;
+        height: 45px;
+        font-size: 1rem;
+    }
+    
+    .modal-content {
+        padding: 20px;
+        max-width: 350px;
+    }
+    
+    .modal-header h2 {
+        font-size: 1.5rem;
+    }
+    
+    .winner-announcement h3 {
+        font-size: 1.1rem;
+    }
+}

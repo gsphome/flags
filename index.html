@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flag Game</title>
-    <link rel="stylesheet" href="styles.css?v=1.02">
+    <title>Flag Guessing Game</title>
+    <link rel="stylesheet" href="assets/styles/styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>Flag Game</h1>        
+        <h1>Flag Guessing Game</h1>        
         <select id="continentFilter">
-            <option value="All">All</option>
+            <option value="All">All Continents</option>
             <option value="Africa">Africa</option>
             <option value="America">America</option>
             <option value="Asia">Asia</option>
@@ -18,14 +18,13 @@
             <option value="Oceania">Oceania</option>
         </select>
         <select id="sovereignFilter">
-            <option value="All">All</option>
-            <option value="Yes" selected>Sovereign</option>
-            <option value="No">Non-Sovereign</option>
+            <option value="All">All Countries</option>
+            <option value="Yes" selected>Sovereign States</option>
+            <option value="No">Non-Sovereign Territories</option>
         </select> 
         <img id="flagImage" class="flag" src="https://flagcdn.com/un.svg" alt="Country Flag">
         <p id="countryInfo" style="visibility: hidden;"></p>
     </div>
-    <script src="script.js?v=1.28"></script>
-    version 1.28
+    <script type="module" src="src/main.js"></script>
 </body>
 </html>
