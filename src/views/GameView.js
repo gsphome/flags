@@ -213,7 +213,13 @@ export class GameView {
         
         let winnerText;
         if (winners.length > 1) {
-            winnerText = '🤝 It\'s a Tie!';
+            // Si hay empate entre equipos (red/green) y draw, el equipo gana
+            if (winners.includes('blue') && (winners.includes('red') || winners.includes('green'))) {
+                const teamWinner = winners.find(team => team !== 'blue');
+                winnerText = `🏆 ${teamNames[teamWinner]} Wins!`;
+            } else {
+                winnerText = '🤝 It\'s a Tie!';
+            }
         } else if (winners[0] === 'blue') {
             winnerText = '🤝 Most Draws!';
         } else {
