@@ -96,6 +96,7 @@ export class GameController {
         this.view.setFiltersEnabled(true);
         this.view.setSettingsButtonVisible(true);
         this.view.hideProgressContainer();
+        this.updateMaxCountriesLimit();
         this.resetTeamScores();
     }
 
