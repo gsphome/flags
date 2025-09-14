@@ -53,6 +53,9 @@ export class GameController {
         Object.keys(this.view.elements.teamCounters).forEach(teamColor => {
             this.view.elements.teamCounters[teamColor].onclick = () => this.handleTeamScore(teamColor);
         });
+        
+        // Keyboard events
+        document.addEventListener('keydown', (event) => this.handleKeyPress(event));
     }
 
     toggleGameState() {
@@ -232,5 +235,27 @@ export class GameController {
         const total = this.filteredCountries.length;
         const current = this.gameState.currentIndex;
         this.view.updateProgress(current, total);
+    }
+
+    handleKeyPress(event) {
+        // Enter key to start game when waiting
+        if (event.key === 'Enter' && !this.gameState.isActive) {
+            this.startGame();
+        }
+        
+        // Number keys for team selection during game
+        if (this.gameState.isActive) {
+            switch(event.key) {
+                case '1':
+                    this.handleTeamScore('red');
+                    break;
+                case '2':
+                    this.handleTeamScore('blue');
+                    break;
+                case '3':
+                    this.handleTeamScore('green');
+                    break;
+            }
+        }
     }
 }
