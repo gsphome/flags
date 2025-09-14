@@ -136,7 +136,7 @@ export class GameView {
         const countdownTimer = document.createElement('div');
         countdownTimer.className = 'countdown-timer';
         countdownTimer.id = 'countdownTimer';
-        countdownTimer.textContent = '5';
+        countdownTimer.textContent = '3';
         
         progressBar.appendChild(progressFill);
         container.appendChild(progressText);
@@ -269,16 +269,16 @@ export class GameView {
     }
 
     showCountryInfo() {
-        this.elements.countryInfo.style.visibility = 'visible';
+        this.elements.countryInfo.style.opacity = '1';
     }
 
     hideCountryInfo() {
-        this.elements.countryInfo.style.visibility = 'hidden';
+        this.elements.countryInfo.style.opacity = '0';
     }
 
     clearCountryInfo() {
-        this.elements.countryInfo.textContent = '';
-        this.elements.countryInfo.style.visibility = 'hidden';
+        this.elements.countryInfo.textContent = 'Country Name';
+        this.elements.countryInfo.style.opacity = '0';
     }
 
     updateProgress(current, total) {
@@ -308,13 +308,13 @@ export class GameView {
 
     hideCountdown() {
         if (window.innerWidth > 600) {
-            this.elements.progressContainer.countdownTimer.style.display = 'none';
+            this.elements.progressContainer.countdownTimer.style.opacity = '0';
         }
     }
 
     showCountdown() {
         if (window.innerWidth > 600) {
-            this.elements.progressContainer.countdownTimer.style.display = 'block';
+            this.elements.progressContainer.countdownTimer.style.opacity = '1';
         }
     }
 

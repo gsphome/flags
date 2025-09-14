@@ -16,7 +16,7 @@ export class GameController {
         this.startTime = null;
         this.timerInterval = null;
         this.countdownInterval = null;
-        this.countdownSeconds = 5;
+        this.countdownSeconds = 3;
         this.countryInfoRevealed = false;
         
         this.initializeGame();
@@ -132,7 +132,7 @@ export class GameController {
 
     updateMaxCountriesLimit() {
         const filters = this.view.getFilterValues();
-        const maxCount = this.countryService.getCountryCount(filters);
+        const maxCount = this.countryService.getMaxCountryCount(filters);
         this.view.updateMaxCountriesInput(maxCount);
     }
 
@@ -192,7 +192,7 @@ export class GameController {
 
     startCountdown() {
         this.stopCountdown();
-        this.countdownSeconds = 5;
+        this.countdownSeconds = 3;
         this.countryInfoRevealed = false;
         this.view.showCountdown();
         this.view.updateCountdown(this.countdownSeconds);

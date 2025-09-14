@@ -1,3 +1,6 @@
+/* --- IMPORTACIÓN DE FUENTE --- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
 /* --- VARIABLES DE COLOR (TEMA AZUL/VERDE) --- */
 :root {
     --dark-bg: #0f172a; /* Azul noche muy oscuro */
@@ -12,9 +15,6 @@
     --team-blue: #3b82f6;
     --team-green: #10b981;
 }
-
-/* --- IMPORTACIÓN DE FUENTE --- */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
 /* --- ESTILOS GENERALES --- */
 * {
@@ -111,6 +111,11 @@ h1::after {
     font-weight: 600;
     color: var(--gradient-start);
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    transition: opacity 0.3s ease;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* --- CONTROLES DE FILTROS (OCULTOS POR DEFECTO) --- */
@@ -494,8 +499,9 @@ h1::after {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease, opacity 0.3s ease;
     animation: pulse-countdown 1s infinite;
+    opacity: 0;
 }
 
 .countdown-timer.urgent {

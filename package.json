@@ -1,0 +1,21 @@
+{
+  "name": "flag-quiz",
+  "version": "1.0.0",
+  "description": "Interactive flag guessing game with MVC architecture",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "npm run dev"
+  },
+  "keywords": ["flags", "quiz", "game", "geography"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

@@ -47,4 +47,20 @@ export class CountryService {
     getCountryCount(filters = {}) {
         return this.filterCountries(filters).length;
     }
+
+    getMaxCountryCount(filters = {}) {
+        let filtered = [...this.countries];
+
+        if (filters.continent && filters.continent !== 'All') {
+            filtered = filtered.filter(country => country.continent === filters.continent);
+        }
+
+        if (filters.sovereigntyStatus && filters.sovereigntyStatus !== 'All') {
+            const isSovereign = filters.sovereigntyStatus === 'Yes';
+            filtered = filtered.filter(country => country.isSovereign === isSovereign);
+        }
+
+        // No aplicar maxCount aquí para obtener el límite real
+        return filtered.length;
+    }
 }
