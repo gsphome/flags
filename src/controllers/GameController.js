@@ -16,7 +16,7 @@ export class GameController {
         this.startTime = null;
         this.timerInterval = null;
         this.countdownInterval = null;
-        this.defaultCountdownSeconds = 3;
+        this.defaultCountdownSeconds = 4;
         this.practiceCountdownSeconds = 2;
         this.countryInfoRevealed = false;
         
