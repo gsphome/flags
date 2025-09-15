@@ -15,7 +15,8 @@ export class GameView {
             sovereignFilter: document.getElementById('sovereignFilter'),
             startButton: this.createStartButton(),
             teamsContainer: this.createTeamsContainer(),
-            maxCountriesInput: this.createMaxCountriesInput()
+            maxCountriesInput: this.createMaxCountriesInput(),
+            practiceModeCheckbox: this.createPracticeModeCheckbox()
         };
         
         elements.filterContainer = this.createFilterContainer(elements);
@@ -55,6 +56,7 @@ export class GameView {
         container.appendChild(elements.continentFilter);
         container.appendChild(elements.sovereignFilter);
         container.appendChild(elements.maxCountriesInput);
+        container.appendChild(elements.practiceModeCheckbox);
         
         document.body.appendChild(container);
         return container;
@@ -90,6 +92,23 @@ export class GameView {
         input.min = '1';
         input.placeholder = 'Max Countries';
         return input;
+    }
+
+    createPracticeModeCheckbox() {
+        const container = document.createElement('div');
+        container.className = 'practice-mode-container';
+        
+        const checkbox = document.createElement('input');
+        checkbox.id = 'practiceMode';
+        checkbox.type = 'checkbox';
+        
+        const label = document.createElement('label');
+        label.htmlFor = 'practiceMode';
+        label.textContent = 'Modo Práctica';
+        
+        container.appendChild(checkbox);
+        container.appendChild(label);
+        return container;
     }
 
     createTeamCounters(elements) {
@@ -158,9 +177,9 @@ export class GameView {
 
     updateFlagDisplay(country) {
         if (country) {
+            this.elements.countryInfo.style.visibility = 'hidden';
             this.elements.flagImage.src = country.flagUrl;
             this.elements.countryInfo.textContent = country.displayName;
-            this.hideCountryInfo();
         }
     }
 
@@ -184,6 +203,7 @@ export class GameView {
         this.elements.continentFilter.disabled = !enabled;
         this.elements.sovereignFilter.disabled = !enabled;
         this.elements.maxCountriesInput.disabled = !enabled;
+        this.elements.practiceModeCheckbox.querySelector('input').disabled = !enabled;
     }
 
     setSettingsButtonVisible(visible) {
@@ -269,10 +289,12 @@ export class GameView {
     }
 
     showCountryInfo() {
+        this.elements.countryInfo.style.visibility = 'visible';
         this.elements.countryInfo.style.opacity = '1';
     }
 
     hideCountryInfo() {
+        this.elements.countryInfo.style.visibility = 'hidden';
         this.elements.countryInfo.style.opacity = '0';
     }
 
@@ -342,7 +364,8 @@ export class GameView {
         return {
             continent: this.elements.continentFilter.value,
             sovereigntyStatus: this.elements.sovereignFilter.value,
-            maxCount: parseInt(this.elements.maxCountriesInput.value, 10)
+            maxCount: parseInt(this.elements.maxCountriesInput.value, 10),
+            practiceMode: this.elements.practiceModeCheckbox.querySelector('input').checked
         };
     }
 }

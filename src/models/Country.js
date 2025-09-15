@@ -13,7 +13,7 @@ export class Country {
     }
 
     get displayName() {
-        return `${this.englishName} | ${this.spanishName}`;
+        return this.spanishName;
     }
 
     get isValidCountry() {

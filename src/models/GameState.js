@@ -12,6 +12,7 @@ export class GameState {
             green: 0
         };
         this.isRandomMode = true;
+        this.isPracticeMode = false;
     }
 
     reset() {

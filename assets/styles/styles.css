@@ -121,7 +121,7 @@ h1::after {
 /* --- CONTROLES DE FILTROS (OCULTOS POR DEFECTO) --- */
 #filterContainer {
     position: fixed;
-    top: -200px;
+    top: -100vh;
     left: 50%;
     transform: translateX(-50%);
     background: rgba(30, 41, 59, 0.98);
@@ -138,6 +138,8 @@ h1::after {
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
     min-width: 300px;
+    opacity: 0;
+    visibility: hidden;
 }
 
 .filter-close-btn {
@@ -169,6 +171,8 @@ h1::after {
 
 #filterContainer.show {
     top: 20px;
+    opacity: 1;
+    visibility: visible;
 }
 
 /* --- BOTÓN DE CONFIGURACIÓN --- */
@@ -217,6 +221,37 @@ h1::after {
     min-width: 110px;
     transition: all 0.3s ease;
     appearance: none;
+}
+
+.practice-mode-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.15);
+    transition: all 0.3s ease;
+    min-width: 140px;
+}
+
+.practice-mode-container:hover {
+    border-color: var(--gradient-start);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.practice-mode-container input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: var(--gradient-start);
+}
+
+.practice-mode-container label {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--primary-text);
+    cursor: pointer;
+    user-select: none;
 }
 
 #continentFilter option, #sovereignFilter option {
@@ -563,6 +598,11 @@ h1::after {
         padding: 40px 15px 15px 15px;
         flex-direction: column;
         gap: 8px;
+        top: -100vh;
+    }
+    
+    #filterContainer.show {
+        top: 10px;
     }
     
     #continentFilter, #sovereignFilter, #maxCountries {
@@ -572,6 +612,18 @@ h1::after {
         font-size: 0.8rem;
         -webkit-appearance: none;
         -moz-appearance: textfield;
+    }
+    
+    .practice-mode-container {
+        width: 100%;
+        min-width: auto;
+        height: 35px;
+        font-size: 0.8rem;
+        justify-content: center;
+    }
+    
+    .practice-mode-container label {
+        font-size: 0.8rem;
     }
     
     #maxCountries::-webkit-outer-spin-button,

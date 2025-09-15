@@ -17,6 +17,7 @@ export class GameController {
         this.timerInterval = null;
         this.countdownInterval = null;
         this.countdownSeconds = 3;
+        this.practiceCountdownSeconds = 2;
         this.countryInfoRevealed = false;
         
         this.initializeGame();
@@ -43,11 +44,7 @@ export class GameController {
         this.view.elements.maxCountriesInput.addEventListener('blur', () => this.validateMaxCountriesInput());
         
         // Flag click to reveal answer
-        this.view.elements.flagImage.onclick = () => {
-            if (!this.countryInfoRevealed) {
-                this.revealCountryInfo();
-            }
-        };
+        this.view.elements.flagImage.onclick = () => this.handleRevealAction();
         
         // Team scoring
         Object.keys(this.view.elements.teamCounters).forEach(teamColor => {
@@ -75,6 +72,7 @@ export class GameController {
             return;
         }
 
+        this.gameState.isPracticeMode = filters.practiceMode;
         this.gameService.startGame(this.filteredCountries);
         this.view.updateStartButton(true);
         this.view.setFiltersEnabled(false);
@@ -165,16 +163,19 @@ export class GameController {
         input.value = value;
     }
 
-    resetTeamScores() {
+    updateAllTeamScores(useCurrentScores = true) {
         Object.keys(this.gameState.teamScores).forEach(teamColor => {
-            this.view.updateTeamScore(teamColor, 0);
+            const score = useCurrentScores ? this.gameState.teamScores[teamColor] : 0;
+            this.view.updateTeamScore(teamColor, score);
         });
     }
 
+    resetTeamScores() {
+        this.updateAllTeamScores(false);
+    }
+
     updateFinalScores() {
-        Object.keys(this.gameState.teamScores).forEach(teamColor => {
-            this.view.updateTeamScore(teamColor, this.gameState.teamScores[teamColor]);
-        });
+        this.updateAllTeamScores(true);
     }
 
     startTimer() {
@@ -195,7 +196,7 @@ export class GameController {
 
     startCountdown() {
         this.stopCountdown();
-        this.countdownSeconds = 3;
+        this.countdownSeconds = this.gameState.isPracticeMode ? this.practiceCountdownSeconds : this.countdownSeconds;
         this.countryInfoRevealed = false;
         this.view.showCountdown();
         this.view.updateCountdown(this.countdownSeconds);
@@ -205,7 +206,11 @@ export class GameController {
             this.view.updateCountdown(this.countdownSeconds);
             
             if (this.countdownSeconds <= 0) {
-                this.revealCountryInfo();
+                if (this.gameState.isPracticeMode) {
+                    this.autoPracticeScore();
+                } else {
+                    this.revealCountryInfo();
+                }
             }
         }, 1000);
     }
@@ -231,21 +236,39 @@ export class GameController {
         this.stopCountdown();
     }
 
+    autoPracticeScore() {
+        this.revealCountryInfo();
+        // Auto-score as draw in practice mode after 2 second delay
+        setTimeout(() => {
+            this.handleTeamScore('blue');
+        }, 2500);
+    }
+
     updateProgress() {
         const total = this.filteredCountries.length;
         const current = this.gameState.currentIndex;
         this.view.updateProgress(current, total);
     }
 
+    handleRevealAction() {
+        if (!this.countryInfoRevealed) {
+            this.revealCountryInfo();
+        }
+    }
+
     handleKeyPress(event) {
-        // Enter key to start game when waiting
         if (event.key === 'Enter' && !this.gameState.isActive) {
-            this.startGame();
+            this.toggleGameState();
         }
         
-        // Number keys for team selection during game
         if (this.gameState.isActive) {
             switch(event.key) {
+                case 'Enter':
+                    this.handleRevealAction();
+                    break;
+                case 'Escape':
+                    this.endGame();
+                    break;
                 case '1':
                     this.handleTeamScore('red');
                     break;
