@@ -16,7 +16,7 @@ export class GameController {
         this.startTime = null;
         this.timerInterval = null;
         this.countdownInterval = null;
-        this.countdownSeconds = 3;
+        this.defaultCountdownSeconds = 3;
         this.practiceCountdownSeconds = 2;
         this.countryInfoRevealed = false;
         
@@ -82,7 +82,11 @@ export class GameController {
         this.startTimer();
         this.view.showProgressContainer();
         this.updateProgress();
-        this.displayCurrentFlag();
+        
+        // Delay before showing first flag
+        setTimeout(() => {
+            this.displayCurrentFlag();
+        }, 500);
     }
 
     endGame() {
@@ -196,16 +200,16 @@ export class GameController {
 
     startCountdown() {
         this.stopCountdown();
-        this.countdownSeconds = this.gameState.isPracticeMode ? this.practiceCountdownSeconds : this.countdownSeconds;
+        let countdownSeconds = this.gameState.isPracticeMode ? this.practiceCountdownSeconds : this.defaultCountdownSeconds;
         this.countryInfoRevealed = false;
         this.view.showCountdown();
-        this.view.updateCountdown(this.countdownSeconds);
+        this.view.updateCountdown(countdownSeconds);
         
         this.countdownInterval = setInterval(() => {
-            this.countdownSeconds--;
-            this.view.updateCountdown(this.countdownSeconds);
+            countdownSeconds--;
+            this.view.updateCountdown(countdownSeconds);
             
-            if (this.countdownSeconds <= 0) {
+            if (countdownSeconds <= 0) {
                 if (this.gameState.isPracticeMode) {
                     this.autoPracticeScore();
                 } else {
@@ -258,7 +262,8 @@ export class GameController {
 
     handleKeyPress(event) {
         if (event.key === 'Enter' && !this.gameState.isActive) {
-            this.toggleGameState();
+            this.startGame();
+            return;
         }
         
         if (this.gameState.isActive) {
