@@ -130,9 +130,10 @@ export class GameController {
         const currentCountry = this.gameService.getCurrentCountry(this.filteredCountries);
         
         if (currentCountry) {
+            // Pasar gameState a la vista para sincronización
+            this.view.gameState = this.gameState;
             this.view.updateFlagDisplay(currentCountry);
             if (this.gameState.gameMode === 'capitals') {
-                this.view.showCountryInfo();
                 this.view.clearCapitalInfo();
             }
             this.startCountdown();

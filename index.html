@@ -7,8 +7,24 @@
     <link rel="stylesheet" href="assets/styles/styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Flag Guessing Game</h1>        
+    <div class="game-wrapper">
+        <div class="game-header">
+            <h1>Flag Guessing Game</h1>
+            <div class="header-controls">
+                <button id="settingsButton">⚙️</button>
+                <button id="startButton">Start Game</button>
+            </div>
+        </div>
+        
+        <div class="container">
+            <img id="flagImage" class="flag" src="https://flagcdn.com/un.svg" alt="Country Flag">
+            <p id="countryInfo" style="opacity: 0;">Country Name</p>
+            <p id="capitalInfo" style="opacity: 0; display: none;">Capital Name</p>
+        </div>
+    </div>
+    
+    <div id="filterContainer">
+        <button class="filter-close-btn">✕</button>
         <select id="gameModeFilter" class="primary-control">
             <option value="flags" selected>🏴 Modo Banderas</option>
             <option value="capitals">🏛️ Modo Capitales</option>
@@ -27,11 +43,16 @@
             <option value="All">🌐 Todos los países</option>
             <option value="Yes" selected>🏳️ Estados soberanos</option>
             <option value="No">🏢 Territorios</option>
-        </select> 
-        <img id="flagImage" class="flag" src="https://flagcdn.com/un.svg" alt="Country Flag">
-        <p id="countryInfo" style="opacity: 0;">Country Name</p>
-        <p id="capitalInfo" style="opacity: 0; display: none;">Capital Name</p>
+        </select>
+        
+        <input id="maxCountries" type="number" min="1" placeholder="Max Countries" class="secondary-control">
+        
+        <div class="practice-mode-container">
+            <input id="practiceMode" type="checkbox">
+            <label for="practiceMode">Modo Práctica</label>
+        </div>
     </div>
+    
     <script type="module" src="src/main.js"></script>
 </body>
 </html>

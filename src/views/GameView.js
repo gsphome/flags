@@ -30,45 +30,25 @@ export class GameView {
     }
 
     createStartButton() {
-        const button = document.createElement('button');
-        button.textContent = 'Start Game';
-        button.id = 'startButton';
-        document.body.insertBefore(button, document.querySelector('.container'));
-        return button;
+        return document.getElementById('startButton');
     }
 
     createTeamsContainer() {
         const container = document.createElement('div');
         container.id = 'teamsContainer';
-        document.body.insertBefore(container, document.querySelector('.container'));
+        document.body.insertBefore(container, document.querySelector('.game-wrapper'));
         return container;
     }
 
     createFilterContainer(elements) {
-        const container = document.createElement('div');
-        container.id = 'filterContainer';
-        
-        // Crear botón de cierre
-        const closeButton = document.createElement('button');
-        closeButton.innerHTML = '✕';
-        closeButton.className = 'filter-close-btn';
+        const container = document.getElementById('filterContainer');
+        const closeButton = container.querySelector('.filter-close-btn');
         closeButton.onclick = () => this.closeSettingsPanel();
-        
-        container.appendChild(closeButton);
-        container.appendChild(elements.gameModeFilter);
-        container.appendChild(elements.continentFilter);
-        container.appendChild(elements.sovereignFilter);
-        container.appendChild(elements.maxCountriesInput);
-        container.appendChild(elements.practiceModeCheckbox);
-        
-        document.body.appendChild(container);
         return container;
     }
 
     createSettingsButton() {
-        const button = document.createElement('button');
-        button.id = 'settingsButton';
-        button.innerHTML = '⚙️';
+        const button = document.getElementById('settingsButton');
         button.title = 'Game Settings';
         
         button.onclick = () => {
@@ -84,34 +64,15 @@ export class GameView {
             }
         };
         
-        document.body.appendChild(button);
         return button;
     }
 
     createMaxCountriesInput() {
-        const input = document.createElement('input');
-        input.id = 'maxCountries';
-        input.type = 'number';
-        input.min = '1';
-        input.placeholder = 'Max Countries';
-        return input;
+        return document.getElementById('maxCountries');
     }
 
     createPracticeModeCheckbox() {
-        const container = document.createElement('div');
-        container.className = 'practice-mode-container';
-        
-        const checkbox = document.createElement('input');
-        checkbox.id = 'practiceMode';
-        checkbox.type = 'checkbox';
-        
-        const label = document.createElement('label');
-        label.htmlFor = 'practiceMode';
-        label.textContent = 'Modo Práctica';
-        
-        container.appendChild(checkbox);
-        container.appendChild(label);
-        return container;
+        return document.querySelector('.practice-mode-container');
     }
 
     createTeamCounters(elements) {
@@ -180,9 +141,23 @@ export class GameView {
 
     updateFlagDisplay(country) {
         if (country) {
-            this.elements.countryInfo.style.visibility = 'hidden';
-            this.elements.flagImage.src = country.flagUrl;
-            this.elements.countryInfo.textContent = country.displayName;
+            // Ocultar elementos antes de cambiar
+            this.elements.countryInfo.style.opacity = '0';
+            this.elements.flagImage.style.opacity = '0';
+            
+            // Cambiar contenido después de que termine la transición de opacity
+            setTimeout(() => {
+                this.elements.flagImage.src = country.flagUrl;
+                this.elements.countryInfo.textContent = country.displayName;
+                
+                // Mostrar elementos actualizados
+                this.elements.flagImage.style.opacity = '1';
+                if (this.gameState && this.gameState.gameMode === 'capitals') {
+                    this.elements.countryInfo.style.opacity = '1';
+                } else {
+                    this.elements.countryInfo.style.opacity = '0';
+                }
+            }, 300);
         }
     }
 
@@ -292,12 +267,10 @@ export class GameView {
     }
 
     showCountryInfo() {
-        this.elements.countryInfo.style.visibility = 'visible';
         this.elements.countryInfo.style.opacity = '1';
     }
 
     hideCountryInfo() {
-        this.elements.countryInfo.style.visibility = 'hidden';
         this.elements.countryInfo.style.opacity = '0';
     }
 

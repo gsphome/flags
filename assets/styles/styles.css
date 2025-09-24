@@ -33,19 +33,37 @@ body {
                       radial-gradient(circle at bottom left, rgba(52, 211, 153, 0.2), transparent 50%);
 }
 
-/* --- CONTENEDOR PRINCIPAL --- */
-.container {
+/* --- CONTENEDOR PRINCIPAL UNIFICADO --- */
+.game-wrapper {
     max-width: 420px;
-    margin: 15px auto 80px auto;
+    margin: 20px auto;
     background-color: var(--card-bg);
-    border-radius: 16px;
-    padding: 20px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    text-align: center;
     animation: fadeIn 0.5s ease-in-out;
-    position: relative;
     overflow: hidden;
+}
+
+.game-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 25px 15px 25px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background: linear-gradient(135deg, rgba(52, 211, 153, 0.05), rgba(37, 99, 235, 0.05));
+}
+
+.header-controls {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.container {
+    padding: 25px;
+    text-align: center;
+    position: relative;
 }
 
 @keyframes fadeIn {
@@ -53,37 +71,21 @@ body {
     to { opacity: 1; transform: scale(1); }
 }
 
-/* --- TÍTULO --- */
-h1 {
-    font-size: 2rem;
+/* --- TÍTULO EN HEADER --- */
+.game-header h1 {
+    font-size: 1.4rem;
     font-weight: 700;
     background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-bottom: 15px;
+    margin: 0;
     position: relative;
 }
 
-/* Emoji decorativo juvenil */
-h1::after {
-    content: '🌍';
-    position: absolute;
-    top: -10px;
-    right: -40px;
-    font-size: 1.5rem;
-    animation: bounce 2s infinite;
-}
-
-@media (max-width: 600px) {
-    h1::after {
-        display: none;
-    }
-}
-
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-    40% { transform: translateY(-10px); }
-    60% { transform: translateY(-5px); }
+.game-header h1::before {
+    content: '🌍 ';
+    font-size: 1.2rem;
+    margin-right: 8px;
 }
 
 /* --- BANDERA --- */
@@ -96,7 +98,7 @@ h1::after {
     border-radius: 12px;
     box-shadow: 0 6px 24px rgba(0, 0, 0, 0.6);
     border: 2px solid rgba(255, 255, 255, 0.1);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.3s ease;
     cursor: pointer;
 }
 
@@ -183,7 +185,7 @@ h1::after {
 }
 
 #filterContainer.show {
-    top: 20px;
+    top: 80px;
     opacity: 1;
     visibility: visible;
 }
@@ -304,41 +306,33 @@ h1::after {
     box-shadow: 0 0 0 2px rgba(52, 211, 153, 0.2);
 }
 
-/* --- BOTÓN DE CONFIGURACIÓN (SECUNDARIO) --- */
+/* --- BOTÓN DE CONFIGURACIÓN INTEGRADO --- */
 #settingsButton {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
     background: rgba(255, 255, 255, 0.08);
     border: 1px solid rgba(255, 255, 255, 0.15);
     color: var(--secondary-text);
     cursor: pointer;
     transition: all 0.3s ease;
-    z-index: 1002;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 0.9rem;
-    backdrop-filter: blur(10px);
-    opacity: 0.7;
 }
 
 #settingsButton:hover {
     background: rgba(255, 255, 255, 0.15);
-    transform: scale(1.05);
+    transform: translateY(-1px);
     border-color: var(--gradient-start);
-    opacity: 1;
     color: var(--primary-text);
 }
 
 #settingsButton.active {
     background: var(--gradient-start);
     color: var(--dark-bg);
-    opacity: 1;
-    transform: scale(1.1);
+    transform: translateY(-1px);
     box-shadow: 0 4px 12px rgba(52, 211, 153, 0.3);
 }
 
@@ -405,51 +399,34 @@ h1::after {
     box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
 }
 
-/* --- BOTÓN PRINCIPAL (PRIMARIO) --- */
+/* --- BOTÓN PRINCIPAL INTEGRADO --- */
 #startButton {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-    font-size: 1.2rem;
-    font-weight: 700;
+    height: 36px;
+    padding: 0 16px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-weight: 600;
     color: var(--dark-bg);
     background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
     border: none;
     cursor: pointer;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 8px 24px rgba(52, 211, 153, 0.4);
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    line-height: 1;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(52, 211, 153, 0.3);
+    white-space: nowrap;
 }
 
 #startButton:hover {
-    transform: scale(1.08) translateY(-2px);
-    box-shadow: 0 12px 32px rgba(52, 211, 153, 0.6);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(52, 211, 153, 0.4);
     background: linear-gradient(135deg, #22c55e, #1d4ed8);
 }
 
 #startButton:active {
-    transform: scale(1.02) translateY(-1px);
+    transform: translateY(0);
     transition: all 0.15s ease;
 }
 
-/* Efecto de pulso para llamar la atención */
-@keyframes pulse {
-    0% { box-shadow: 0 8px 25px rgba(52, 211, 153, 0.4); }
-    50% { box-shadow: 0 8px 25px rgba(52, 211, 153, 0.8), 0 0 0 10px rgba(52, 211, 153, 0.1); }
-    100% { box-shadow: 0 8px 25px rgba(52, 211, 153, 0.4); }
-}
 
-#startButton.pulse {
-    animation: pulse 2s infinite;
-}
 
 /* --- CONTENEDOR DE EQUIPOS --- */
 #teamsContainer {
@@ -699,23 +676,41 @@ h1::after {
 
 /* --- RESPONSIVIDAD --- */
 @media (max-width: 600px) {
+    .game-wrapper {
+        margin: 10px;
+    }
+    
+    .game-header {
+        padding: 15px 20px 12px 20px;
+    }
+    
+    .game-header h1 {
+        font-size: 1.2rem;
+    }
+    
+    .game-header h1::before {
+        font-size: 1rem;
+        margin-right: 6px;
+    }
+    
+    .header-controls {
+        gap: 8px;
+    }
+    
+    #settingsButton {
+        width: 32px;
+        height: 32px;
+        font-size: 0.8rem;
+    }
+    
+    #startButton {
+        height: 32px;
+        padding: 0 12px;
+        font-size: 0.8rem;
+    }
+    
     .container {
-        margin: 8px 8px 15px 8px;
-        padding: 15px;
-    }
-    
-    h1 {
-        font-size: 0;
-        margin-bottom: 10px;
-    }
-    
-    h1::before {
-        content: 'Flag Quiz';
-        font-size: 1.6rem;
-        background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-weight: 700;
+        padding: 20px 15px;
     }
     
     .flag {
@@ -741,7 +736,7 @@ h1::after {
     }
     
     #filterContainer.show {
-        top: 10px;
+        top: 70px;
     }
     
     #continentFilter, #sovereignFilter, #maxCountries {
@@ -784,21 +779,7 @@ h1::after {
         flex: 1;
     }
     
-    #startButton {
-        bottom: 15px;
-        right: 15px;
-        width: 56px;
-        height: 56px;
-        font-size: 1rem;
-    }
-    
-    #settingsButton {
-        top: 15px;
-        right: 15px;
-        width: 36px;
-        height: 36px;
-        font-size: 0.8rem;
-    }
+
     
     .modal-content {
         padding: 15px;
