@@ -34,10 +34,7 @@ export class GameView {
     }
 
     createTeamsContainer() {
-        const container = document.createElement('div');
-        container.id = 'teamsContainer';
-        document.body.insertBefore(container, document.querySelector('.game-wrapper'));
-        return container;
+        return document.getElementById('teamsContainer');
     }
 
     createFilterContainer(elements) {
@@ -86,7 +83,7 @@ export class GameView {
         teams.forEach(team => {
             const counter = document.createElement('div');
             counter.id = `${team.id}Counter`;
-            counter.textContent = `${team.name}: 0`;
+            counter.innerHTML = `<span>${team.name}</span><span>0</span>`;
             counters[team.id] = counter;
             elements.teamsContainer.appendChild(counter);
         });
@@ -169,7 +166,7 @@ export class GameView {
                 blue: 'Draw',
                 green: 'Green Team'
             };
-            counter.textContent = `${teamNames[teamColor]}: ${score}`;
+            counter.innerHTML = `<span>${teamNames[teamColor]}</span><span>${score}</span>`;
         }
     }
 
