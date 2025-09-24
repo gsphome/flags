@@ -12,7 +12,11 @@ export class CountryService {
         try {
             const response = await fetch('assets/data/flags.json');
             const data = await response.json();
-            this.countries = data.map(countryData => new Country(countryData));
+            this.countries = data.map(countryData => {
+                const country = new Country(countryData);
+                country.capital = countryData.Capital_Spanish || 'Desconocida';
+                return country;
+            });
             return this.countries;
         } catch (error) {
             console.error('Error loading countries:', error);

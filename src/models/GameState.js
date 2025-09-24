@@ -6,6 +6,7 @@ export class GameState {
         this.isActive = false;
         this.currentIndex = 0;
         this.gameSequence = [];
+        this.gameMode = 'flags'; // 'flags' or 'capitals'
         this.teamScores = {
             red: 0,
             blue: 0,

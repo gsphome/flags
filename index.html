@@ -9,21 +9,28 @@
 <body>
     <div class="container">
         <h1>Flag Guessing Game</h1>        
-        <select id="continentFilter">
-            <option value="All">All Continents</option>
-            <option value="Africa">Africa</option>
-            <option value="America">America</option>
-            <option value="Asia">Asia</option>
-            <option value="Europe">Europe</option>
-            <option value="Oceania">Oceania</option>
+        <select id="gameModeFilter" class="primary-control">
+            <option value="flags" selected>🏴 Banderas</option>
+            <option value="capitals">🏛️ Capitales</option>
         </select>
+        
+        <select id="continentFilter">
+            <option value="All">Todos los continentes</option>
+            <option value="Africa">África</option>
+            <option value="America">América</option>
+            <option value="Asia">Asia</option>
+            <option value="Europe">Europa</option>
+            <option value="Oceania">Oceanía</option>
+        </select>
+        
         <select id="sovereignFilter">
-            <option value="All">All Countries</option>
-            <option value="Yes" selected>Sovereign States</option>
-            <option value="No">Non-Sovereign Territories</option>
+            <option value="All">Todos los países</option>
+            <option value="Yes" selected>Estados soberanos</option>
+            <option value="No">Territorios</option>
         </select> 
         <img id="flagImage" class="flag" src="https://flagcdn.com/un.svg" alt="Country Flag">
         <p id="countryInfo" style="opacity: 0;">Country Name</p>
+        <p id="capitalInfo" style="opacity: 0; display: none;">Capital Name</p>
     </div>
     <script type="module" src="src/main.js"></script>
 </body>

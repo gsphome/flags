@@ -11,8 +11,10 @@ export class GameView {
         const elements = {
             flagImage: document.getElementById('flagImage'),
             countryInfo: document.getElementById('countryInfo'),
+            capitalInfo: document.getElementById('capitalInfo'),
             continentFilter: document.getElementById('continentFilter'),
             sovereignFilter: document.getElementById('sovereignFilter'),
+            gameModeFilter: document.getElementById('gameModeFilter'),
             startButton: this.createStartButton(),
             teamsContainer: this.createTeamsContainer(),
             maxCountriesInput: this.createMaxCountriesInput(),
@@ -53,6 +55,7 @@ export class GameView {
         closeButton.onclick = () => this.closeSettingsPanel();
         
         container.appendChild(closeButton);
+        container.appendChild(elements.gameModeFilter);
         container.appendChild(elements.continentFilter);
         container.appendChild(elements.sovereignFilter);
         container.appendChild(elements.maxCountriesInput);
@@ -364,8 +367,25 @@ export class GameView {
         return {
             continent: this.elements.continentFilter.value,
             sovereigntyStatus: this.elements.sovereignFilter.value,
+            gameMode: this.elements.gameModeFilter.value,
             maxCount: parseInt(this.elements.maxCountriesInput.value, 10),
             practiceMode: this.elements.practiceModeCheckbox.querySelector('input').checked
         };
+    }
+
+    showCapitalInfo() {
+        this.elements.capitalInfo.style.opacity = '1';
+        this.elements.capitalInfo.style.display = 'block';
+    }
+
+    hideCapitalInfo() {
+        this.elements.capitalInfo.style.opacity = '0';
+        this.elements.capitalInfo.style.display = 'none';
+    }
+
+    clearCapitalInfo() {
+        this.elements.capitalInfo.textContent = 'Capital Name';
+        this.elements.capitalInfo.style.opacity = '0';
+        this.elements.capitalInfo.style.display = 'none';
     }
 }

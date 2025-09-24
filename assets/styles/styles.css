@@ -118,6 +118,20 @@ h1::after {
     justify-content: center;
 }
 
+/* --- INFORMACIÓN DE LA CAPITAL --- */
+#capitalInfo {
+    margin: 5px 0 15px 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--gradient-end);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    transition: opacity 0.3s ease;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* --- CONTROLES DE FILTROS (OCULTOS POR DEFECTO) --- */
 #filterContainer {
     position: fixed;
@@ -175,37 +189,106 @@ h1::after {
     visibility: visible;
 }
 
-/* --- BOTÓN DE CONFIGURACIÓN --- */
+.settings-section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.section-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--gradient-start);
+    margin: 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+.primary-control {
+    height: 45px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 12px;
+    border: 2px solid var(--gradient-start);
+    background: linear-gradient(135deg, rgba(52, 211, 153, 0.1), rgba(37, 99, 235, 0.1));
+    color: var(--primary-text);
+    text-align: center;
+    padding: 0 15px;
+    transition: all 0.3s ease;
+    appearance: none;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.filter-label {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--secondary-text);
+    text-align: center;
+    margin: 0;
+}
+
+.filter-group select,
+.filter-group input {
+    height: 38px;
+    font-size: 0.85rem;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--primary-text);
+    padding: 0 12px;
+    transition: all 0.3s ease;
+    appearance: none;
+}
+
+.filter-group select:focus,
+.filter-group input:focus {
+    outline: none;
+    border-color: var(--gradient-start);
+    box-shadow: 0 0 0 2px rgba(52, 211, 153, 0.2);
+}
+
+/* --- BOTÓN DE CONFIGURACIÓN (SECUNDARIO) --- */
 #settingsButton {
     position: fixed;
-    top: 25px;
-    right: 25px;
-    width: 45px;
-    height: 45px;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.1);
-    border: 2px solid rgba(255, 255, 255, 0.2);
-    color: var(--primary-text);
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: var(--secondary-text);
     cursor: pointer;
     transition: all 0.3s ease;
     z-index: 1002;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     backdrop-filter: blur(10px);
+    opacity: 0.7;
 }
 
 #settingsButton:hover {
-    background: rgba(255, 255, 255, 0.2);
-    transform: rotate(90deg) scale(1.1);
+    background: rgba(255, 255, 255, 0.15);
+    transform: scale(1.05);
     border-color: var(--gradient-start);
+    opacity: 1;
+    color: var(--primary-text);
 }
 
 #settingsButton.active {
     background: var(--gradient-start);
     color: var(--dark-bg);
-    transform: rotate(180deg);
+    opacity: 1;
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(52, 211, 153, 0.3);
 }
 
 #continentFilter, #sovereignFilter, #maxCountries {
@@ -226,6 +309,7 @@ h1::after {
 .practice-mode-container {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
     padding: 8px 15px;
     border-radius: 20px;
@@ -270,22 +354,22 @@ h1::after {
     box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
 }
 
-/* --- BOTÓN PRINCIPAL (FLOATING ACTION BUTTON) --- */
+/* --- BOTÓN PRINCIPAL (PRIMARIO) --- */
 #startButton {
     position: fixed;
-    bottom: 25px;
-    right: 25px;
-    width: 60px;
-    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    width: 64px;
+    height: 64px;
     border-radius: 50%;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 700;
     color: var(--dark-bg);
     background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
     border: none;
     cursor: pointer;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 6px 20px rgba(52, 211, 153, 0.4);
+    box-shadow: 0 8px 24px rgba(52, 211, 153, 0.4);
     z-index: 1000;
     display: flex;
     align-items: center;
@@ -295,14 +379,14 @@ h1::after {
 }
 
 #startButton:hover {
-    transform: scale(1.1) translateY(-3px);
-    box-shadow: 0 12px 35px rgba(52, 211, 153, 0.6);
+    transform: scale(1.08) translateY(-2px);
+    box-shadow: 0 12px 32px rgba(52, 211, 153, 0.6);
     background: linear-gradient(135deg, #22c55e, #1d4ed8);
 }
 
 #startButton:active {
-    transform: scale(1.05) translateY(-1px);
-    transition: all 0.1s ease;
+    transform: scale(1.02) translateY(-1px);
+    transition: all 0.15s ease;
 }
 
 /* Efecto de pulso para llamar la atención */
@@ -646,21 +730,19 @@ h1::after {
     }
     
     #startButton {
-        bottom: 70px;
+        bottom: 15px;
         right: 15px;
-        width: 55px;
-        height: 55px;
-        font-size: 0.95rem;
+        width: 56px;
+        height: 56px;
+        font-size: 1rem;
     }
     
     #settingsButton {
-        bottom: 70px;
-        left: 15px;
-        top: auto;
-        right: auto;
-        width: 38px;
-        height: 38px;
-        font-size: 0.85rem;
+        top: 15px;
+        right: 15px;
+        width: 36px;
+        height: 36px;
+        font-size: 0.8rem;
     }
     
     .modal-content {

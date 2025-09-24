@@ -73,6 +73,7 @@ export class GameController {
         }
 
         this.gameState.isPracticeMode = filters.practiceMode;
+        this.gameState.gameMode = filters.gameMode;
         this.gameService.startGame(this.filteredCountries);
         this.view.updateStartButton(true);
         this.view.setFiltersEnabled(false);
@@ -97,6 +98,7 @@ export class GameController {
         this.view.showGameEndMessage(this.gameState.teamScores);
         this.view.setDefaultFlag();
         this.view.clearCountryInfo();
+        this.view.clearCapitalInfo();
         this.view.updateStartButton(false);
         this.view.setFiltersEnabled(true);
         this.view.setSettingsButtonVisible(true);
@@ -129,6 +131,10 @@ export class GameController {
         
         if (currentCountry) {
             this.view.updateFlagDisplay(currentCountry);
+            if (this.gameState.gameMode === 'capitals') {
+                this.view.showCountryInfo();
+                this.view.clearCapitalInfo();
+            }
             this.startCountdown();
         } else {
             this.endGame();
@@ -210,10 +216,11 @@ export class GameController {
             this.view.updateCountdown(countdownSeconds);
             
             if (countdownSeconds <= 0) {
+                this.revealCountryInfo();
                 if (this.gameState.isPracticeMode) {
-                    this.autoPracticeScore();
-                } else {
-                    this.revealCountryInfo();
+                    setTimeout(() => {
+                        this.handleTeamScore('blue');
+                    }, 2500);
                 }
             }
         }, 1000);
@@ -230,23 +237,26 @@ export class GameController {
     revealCountryInfo() {
         if (!this.countryInfoRevealed) {
             this.countryInfoRevealed = true;
-            this.view.showCountryInfo();
+            if (this.gameState.gameMode === 'flags') {
+                this.view.showCountryInfo();
+            } else if (this.gameState.gameMode === 'capitals') {
+                const currentCountry = this.gameService.getCurrentCountry(this.filteredCountries);
+                if (currentCountry && currentCountry.capital) {
+                    this.view.elements.capitalInfo.textContent = currentCountry.capital;
+                    this.view.showCapitalInfo();
+                }
+            }
             this.stopCountdown();
         }
     }
 
     resetCountryState() {
         this.countryInfoRevealed = false;
+        this.view.hideCapitalInfo();
         this.stopCountdown();
     }
 
-    autoPracticeScore() {
-        this.revealCountryInfo();
-        // Auto-score as draw in practice mode after 2 second delay
-        setTimeout(() => {
-            this.handleTeamScore('blue');
-        }, 2500);
-    }
+
 
     updateProgress() {
         const total = this.filteredCountries.length;
